@@ -1,0 +1,983 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_h5Y18IDREeqr5fP3d8_puw" name="lineadehorizonte">
+    <eAnnotations xmi:id="_iF95YIDREeqr5fP3d8_puw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_iF95YYDREeqr5fP3d8_puw" source="codegen">
+        <details xmi:id="_iF95YoDREeqr5fP3d8_puw" key="codegenDirectory" value="/lineadehorizonte/src/main/java"/>
+        <details xmi:id="_iYIAYIDREeqr5fP3d8_puw" key="AssociatedSourceCode" value="/lineadehorizonte/src/main/java/etsisi/ems2020/trabajo3/lineadehorizonte/Main.java;3529559947/1;/lineadehorizonte/src/main/java/etsisi/ems2020/trabajo3/lineadehorizonte/Edificio.java;2965640202/1;/lineadehorizonte/src/main/java/etsisi/ems2020/trabajo3/lineadehorizonte/LineaHorizonte.java;2956582524/1;/lineadehorizonte/src/main/java/etsisi/ems2020/trabajo3/lineadehorizonte/Ciudad.java;1739668358/1;/lineadehorizonte/src/main/java/etsisi/ems2020/trabajo3/lineadehorizonte/Punto.java;601890188/1;/lineadehorizonte/src/test/java/etsisi/ems2020/trabajo3/lineadehorizonte/CiudadTest.java;2026766108/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_iQ0egIDREeqr5fP3d8_puw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_iQ1FkIDREeqr5fP3d8_puw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_iQ1FkYDREeqr5fP3d8_puw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_iQ1FkoDREeqr5fP3d8_puw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_iQ1Fk4DREeqr5fP3d8_puw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_iQ1FlIDREeqr5fP3d8_puw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_iQ1FlYDREeqr5fP3d8_puw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_iQ1FloDREeqr5fP3d8_puw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_iQ1soIDREeqr5fP3d8_puw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_iP_YEIDREeqr5fP3d8_puw" name="etsisi">
+      <packagedElement xmi:type="uml:Package" xmi:id="_iP__IIDREeqr5fP3d8_puw" name="ems2020">
+        <packagedElement xmi:type="uml:Package" xmi:id="_iP__IYDREeqr5fP3d8_puw" name="trabajo3">
+          <packagedElement xmi:type="uml:Package" xmi:id="_iQAmMYDREeqr5fP3d8_puw" name="lineadehorizonte">
+            <packagedElement xmi:type="uml:Class" xmi:id="_iQzQYIDREeqr5fP3d8_puw" name="Main">
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iThNMIDREeqr5fP3d8_puw" name="main" specification="_iQ1soYDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iThNMYDREeqr5fP3d8_puw" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iThNMoDREeqr5fP3d8_puw" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>// Variables que necesitar� para posteriomente &#xD;
+		// llamar a los distintos m�todos que he ido creando &#xD;
+		// en las clases .&#xD;
+		Punto p=null;&#xD;
+		FileWriter fileWriter=null; &#xD;
+		PrintWriter out=null;&#xD;
+		int i=0;&#xD;
+		&#xD;
+		&#xD;
+		&#xD;
+		/*&#xD;
+		 Empezamos a ejecutar el c�digo para intentar hacer el ejercicio&#xD;
+		 que nos piden, calcular la l�nea del horizonte de una ciudad.&#xD;
+		 */&#xD;
+     Ciudad c = new Ciudad();&#xD;
+     c.cargarEdificios(&quot;ciudad1.txt&quot;);&#xD;
+     &#xD;
+     // Creamos l�nea del horizonte&#xD;
+     LineaHorizonte linea = new LineaHorizonte();&#xD;
+     linea = c.getLineaHorizonte();&#xD;
+     //Guardamos la linea del horizonte&#xD;
+     &#xD;
+     linea.guardaLineaHorizonte(&quot;salida.txt&quot;, p, fileWriter,out, i);&#xD;
+     System.out.println(&quot;-- Proceso finalizado Correctamente --&quot;);&#xD;
+     Punto  p2 = new Punto(5,6);&#xD;
+     System.out.println(p2);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_iQ1soYDREeqr5fP3d8_puw" name="main" isStatic="true" method="_iThNMIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iQ1sooDREeqr5fP3d8_puw" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iQ2TsIDREeqr5fP3d8_puw" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_iQ2TsYDREeqr5fP3d8_puw" name="Edificio">
+              <ownedAttribute xmi:id="_iTVnAIDREeqr5fP3d8_puw" name="xi">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_iTVnAYDREeqr5fP3d8_puw" name="y">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_iTWOEIDREeqr5fP3d8_puw" name="xd">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iThNM4DREeqr5fP3d8_puw" name="Edificio" specification="_iQ5XAIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iThNNIDREeqr5fP3d8_puw" type="_iQ2TsYDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>this.xd = 0;&#xD;
+     this.xi = 0;&#xD;
+     this.y = 0;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTh0QIDREeqr5fP3d8_puw" name="Edificio" specification="_iQ5-EIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTh0QYDREeqr5fP3d8_puw" name="xi">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTh0QoDREeqr5fP3d8_puw" name="y">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTh0Q4DREeqr5fP3d8_puw" name="xd">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTh0RIDREeqr5fP3d8_puw" type="_iQ2TsYDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>this.xd = xd;&#xD;
+     this.xi = xi;&#xD;
+     this.y = y;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_iQ5XAIDREeqr5fP3d8_puw" name="Edificio" method="_iThNM4DREeqr5fP3d8_puw">
+                <eAnnotations xmi:id="_iQ5XAYDREeqr5fP3d8_puw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_iQ5XAoDREeqr5fP3d8_puw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_iQ5XA4DREeqr5fP3d8_puw" type="_iQ2TsYDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iQ5-EIDREeqr5fP3d8_puw" name="Edificio" method="_iTh0QIDREeqr5fP3d8_puw">
+                <eAnnotations xmi:id="_iQ6lIoDREeqr5fP3d8_puw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_iQ6lI4DREeqr5fP3d8_puw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_iQ5-EYDREeqr5fP3d8_puw" name="xi">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iQ6lIIDREeqr5fP3d8_puw" name="y">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iQ6lIYDREeqr5fP3d8_puw" name="xd">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iQ6lJIDREeqr5fP3d8_puw" type="_iQ2TsYDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_iQ8aUIDREeqr5fP3d8_puw" name="LineaHorizonte">
+              <ownedAttribute xmi:id="_iTW1IIDREeqr5fP3d8_puw" name="LineaHorizonte" visibility="private" type="_iS6JMIDREeqr5fP3d8_puw" association="_iTv2sIDREeqr5fP3d8_puw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTibUIDREeqr5fP3d8_puw" name="LineaHorizonte" specification="_iQ9BYIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTibUYDREeqr5fP3d8_puw" type="_iQ8aUIDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>LineaHorizonte = new ArrayList &lt;Punto>();&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTibUoDREeqr5fP3d8_puw" name="getPunto" specification="_iQ-PgIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTibU4DREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTibVIDREeqr5fP3d8_puw" type="_iRU00IDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>return (Punto)this.LineaHorizonte.get(i);&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTibVYDREeqr5fP3d8_puw" name="addPunto" specification="_iS7-YIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTibVoDREeqr5fP3d8_puw" name="p" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <language>java</language>
+                <body>LineaHorizonte.add(p);&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTibV4DREeqr5fP3d8_puw" name="borrarPunto" specification="_iQ_doIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTibWIDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>LineaHorizonte.remove(i);&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTjCYIDREeqr5fP3d8_puw" name="size" specification="_iRBS0IDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTjCYYDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return LineaHorizonte.size();&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTjCYoDREeqr5fP3d8_puw" name="isEmpty" specification="_iRBS0oDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTjCY4DREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return LineaHorizonte.isEmpty();&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTjCZIDREeqr5fP3d8_puw" name="guardaLineaHorizonte" specification="_iTO5UIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTjCZYDREeqr5fP3d8_puw" name="fichero">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTjCZoDREeqr5fP3d8_puw" name="p" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTjCZ4DREeqr5fP3d8_puw" name="fileWriter" type="_iS3F4IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTjCaIDREeqr5fP3d8_puw" name="out" type="_iS4UAIDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTjCaYDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>try&#xD;
+     {&#xD;
+         p = new Punto();&#xD;
+         fileWriter = new FileWriter(fichero);&#xD;
+         out = new PrintWriter (fileWriter);&#xD;
+      &#xD;
+         for(i=0; i&lt;this.size(); i++)&#xD;
+         {&#xD;
+             p=(getPunto(i));&#xD;
+             out.print(p.getX());&#xD;
+             out.print(&quot; &quot;);&#xD;
+             out.print(p.getY());&#xD;
+             out.println();&#xD;
+         }&#xD;
+         out.close();&#xD;
+     }&#xD;
+     catch(Exception e){}&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTjpcIDREeqr5fP3d8_puw" name="imprimir" specification="_iRDIAIDREeqr5fP3d8_puw">
+                <language>java</language>
+                <body>for(int i=0; i&lt; LineaHorizonte.size(); i++ ){&#xD;
+ 		//System.out.println(&quot;X: &quot; + LineaHorizonte.get(i).getX() + &quot; Y: &quot; + LineaHorizonte.get(i).getY());&#xD;
+ 		System.out.println(cadena(i));&#xD;
+ 	}&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTkQgIDREeqr5fP3d8_puw" name="cadena" specification="_iRDvEIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTk3kIDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTk3kYDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Punto p = LineaHorizonte.get(i);&#xD;
+ 	int x = p.getX();&#xD;
+ 	int y = p.getY();&#xD;
+ 	String linea = &quot;Punto [x=&quot;;&#xD;
+		linea = linea + x;&#xD;
+		linea = linea + &quot;, y=&quot;;&#xD;
+		linea = linea + y;&#xD;
+		linea = linea +  &quot;]&quot;;&#xD;
+		return linea;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_iQ9BYIDREeqr5fP3d8_puw" name="LineaHorizonte" method="_iTibUIDREeqr5fP3d8_puw">
+                <eAnnotations xmi:id="_iQ9BYYDREeqr5fP3d8_puw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_iQ9ocIDREeqr5fP3d8_puw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_iTrlQIDREeqr5fP3d8_puw">
+                  <body>Constructor sin par�metros</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_iQ9ocYDREeqr5fP3d8_puw" type="_iQ8aUIDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iQ-PgIDREeqr5fP3d8_puw" name="getPunto" method="_iTibUoDREeqr5fP3d8_puw">
+                <ownedComment xmi:id="_iTrlQYDREeqr5fP3d8_puw">
+                  <body>m�todo que devuelve un objeto de la clase Punto</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_iQ-PgYDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iS7XUYDREeqr5fP3d8_puw" type="_iRU00IDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iQ_doIDREeqr5fP3d8_puw" name="borrarPunto" method="_iTibV4DREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRAEsIDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRBS0IDREeqr5fP3d8_puw" name="size" method="_iTjCYIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRBS0YDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRBS0oDREeqr5fP3d8_puw" name="isEmpty" method="_iTjCYoDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRB54IDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRDIAIDREeqr5fP3d8_puw" name="imprimir" method="_iTjpcIDREeqr5fP3d8_puw"/>
+              <ownedOperation xmi:id="_iRDvEIDREeqr5fP3d8_puw" name="cadena" method="_iTkQgIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRDvEYDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iRDvEoDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iS7-YIDREeqr5fP3d8_puw" name="addPunto" method="_iTibVYDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iS7-YYDREeqr5fP3d8_puw" name="p" type="_iRU00IDREeqr5fP3d8_puw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iTO5UIDREeqr5fP3d8_puw" name="guardaLineaHorizonte" method="_iTjCZIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTO5UYDREeqr5fP3d8_puw" name="fichero">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTO5UoDREeqr5fP3d8_puw" name="p" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTO5U4DREeqr5fP3d8_puw" name="fileWriter" type="_iS3F4IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTO5VIDREeqr5fP3d8_puw" name="out" type="_iS4UAIDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTO5VYDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_iRGLUIDREeqr5fP3d8_puw" name="Ciudad">
+              <ownedAttribute xmi:id="_iTbGkIDREeqr5fP3d8_puw" name="ciudad" visibility="private" type="_iS6JMIDREeqr5fP3d8_puw" association="_iTxE0IDREeqr5fP3d8_puw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTk3koDREeqr5fP3d8_puw" name="Ciudad" specification="_iRIAgIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTk3k4DREeqr5fP3d8_puw" type="_iRGLUIDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>/*&#xD;
+ 	 * Generamos una ciudad de manera aleatoria para hacer &#xD;
+ 	 * pruebas.&#xD;
+ 	 */&#xD;
+ciudad = new ArrayList &lt;Edificio>();&#xD;
+int n = 5;&#xD;
+int i=0;&#xD;
+int xi,y,xd;&#xD;
+for(i=0;i&lt;n;i++)&#xD;
+{&#xD;
+xi=(int)(Math.random()*100);&#xD;
+y=(int)(Math.random()*100);&#xD;
+xd=(int)(xi+(Math.random()*100));&#xD;
+this.addEdificio(new Edificio(xi,y,xd));&#xD;
+}&#xD;
+     &#xD;
+ciudad = new ArrayList &lt;Edificio>();&#xD;
+</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTleoIDREeqr5fP3d8_puw" name="getEdificio" specification="_iRInkIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTleoYDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTleooDREeqr5fP3d8_puw" type="_iQ2TsYDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>return (Edificio)this.ciudad.get(i);&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTleo4DREeqr5fP3d8_puw" name="addEdificio" specification="_iS_BsYDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTlepIDREeqr5fP3d8_puw" name="e" type="_iQ2TsYDREeqr5fP3d8_puw"/>
+                <language>java</language>
+                <body>ciudad.add(e);&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTlepYDREeqr5fP3d8_puw" name="removeEdificio" specification="_iRJ1sIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTlepoDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>ciudad.remove(i);&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTmFsIDREeqr5fP3d8_puw" name="size" specification="_iRLD0IDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTmFsYDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return ciudad.size();&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTmFsoDREeqr5fP3d8_puw" name="getLineaHorizonte" specification="_iRLq4YDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTmFs4DREeqr5fP3d8_puw" type="_iQ8aUIDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>// pi y pd, representan los edificios de la izquierda y de la derecha.&#xD;
+     int pi = 0;                       &#xD;
+     int pd = ciudad.size()-1;      &#xD;
+     return crearLineaHorizonte(pi, pd);  &#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTmFtIDREeqr5fP3d8_puw" name="crearLineaHorizonte" specification="_iRM5AIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTmFtYDREeqr5fP3d8_puw" name="pi">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTmFtoDREeqr5fP3d8_puw" name="pd">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTmFt4DREeqr5fP3d8_puw" type="_iQ8aUIDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>LineaHorizonte linea = new LineaHorizonte(); // LineaHorizonte de salida&#xD;
+Punto p1 = new Punto();   // punto donde se guardara en su X la Xi del efificio y en su Y la altura del edificio&#xD;
+Punto p2 = new Punto();   // punto donde se guardara en su X la Xd del efificio y en su Y le pondremos el valor 0&#xD;
+Edificio edificio = new Edificio();    &#xD;
+     &#xD;
+// Caso base, la ciudad solo tiene un edificio, el perfil es el de ese edificio. &#xD;
+if(pi==pd) &#xD;
+{&#xD;
+edificio = this.getEdificio(pi); // Obtenemos el único edificio y lo guardo en b&#xD;
+// En cada punto guardamos la coordenada X y la altura.&#xD;
+p1.setX(edificio.getXi());       &#xD;
+p1.setY(edificio.getY());        // guardo la altura&#xD;
+p2.setX(edificio.getXd());       &#xD;
+p2.setY(0);                      // como el edificio se compone de 3 variables, en la Y de p2 le añadiremos un 0&#xD;
+// Añado los puntos a la línea del horizonte&#xD;
+linea.addPunto(p1);      &#xD;
+linea.addPunto(p2);&#xD;
+}&#xD;
+else&#xD;
+{&#xD;
+// Edificio mitad&#xD;
+int medio=(pi+pd)/2;&#xD;
+&#xD;
+LineaHorizonte s1 = this.crearLineaHorizonte(pi,medio);  &#xD;
+LineaHorizonte s2 = this.crearLineaHorizonte(medio+1,pd);&#xD;
+Punto a=null, b=null, aux=null;&#xD;
+linea = LineaHorizonteFussion(s1,s2,a,b,aux); &#xD;
+}&#xD;
+return linea;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTmswIDREeqr5fP3d8_puw" name="LineaHorizonteFussion" specification="_iTAP0IDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTmswYDREeqr5fP3d8_puw" name="s1" type="_iQ8aUIDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTmswoDREeqr5fP3d8_puw" name="s2" type="_iQ8aUIDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTmsw4DREeqr5fP3d8_puw" name="p1" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTmsxIDREeqr5fP3d8_puw" name="p2" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTmsxYDREeqr5fP3d8_puw" name="paux" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTmsxoDREeqr5fP3d8_puw" type="_iQ8aUIDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>// en estas variables guardaremos las alturas de los puntos anteriores, en s1y la del s1, en s2y la del s2 &#xD;
+ 	// y en prev guardaremos la previa del segmento anterior introducido&#xD;
+     int s1y=-1, s2y=-1, prev=-1;    &#xD;
+     LineaHorizonte salida = new LineaHorizonte(); // LineaHorizonte de salida&#xD;
+     &#xD;
+     p1 = new Punto();         // punto donde guardaremos el primer punto del LineaHorizonte s1&#xD;
+     p2 = new Punto();         // punto donde guardaremos el primer punto del LineaHorizonte s2&#xD;
+     &#xD;
+     System.out.println(&quot;==== S1 ====&quot;);&#xD;
+     s1.imprimir();&#xD;
+     System.out.println(&quot;==== S2 ====&quot;);&#xD;
+     s2.imprimir();&#xD;
+     System.out.println(&quot;\n&quot;);&#xD;
+     &#xD;
+     &#xD;
+     &#xD;
+     //Mientras tengamos elementos en s1 y en s2&#xD;
+     while ((!s1.isEmpty()) &amp;&amp; (!s2.isEmpty())) &#xD;
+     {&#xD;
+         paux = new Punto();  // Inicializamos la variable paux&#xD;
+         p1 = s1.getPunto(0); // guardamos el primer elemento de s1&#xD;
+         p2 = s2.getPunto(0); // guardamos el primer elemento de s2&#xD;
+&#xD;
+         if (p1.getX() &lt; p2.getX()) // si X del s1 es menor que la X del s2&#xD;
+         {&#xD;
+             paux.setX(p1.getX());                // guardamos en paux esa X&#xD;
+             paux.setY(Math.max(p1.getY(), s2y)); // y hacemos que el maximo entre la Y del s1 y la altura previa del s2 sea la altura Y de paux&#xD;
+             &#xD;
+             if (paux.getY()!=prev) // si este maximo no es igual al del segmento anterior&#xD;
+             {&#xD;
+                 salida.addPunto(paux); // añadimos el punto al LineaHorizonte de salida&#xD;
+                 prev = paux.getY();    // actualizamos prev&#xD;
+             }&#xD;
+             s1y = p1.getY();   // actualizamos la altura s1y&#xD;
+             s1.borrarPunto(0); // en cualquier caso eliminamos el punto de s1 (tanto si se añade como si no es valido)&#xD;
+         }&#xD;
+         else if (p1.getX() > p2.getX()) // si X del s1 es mayor que la X del s2&#xD;
+         {&#xD;
+             paux.setX(p2.getX());                // guardamos en paux esa X&#xD;
+             paux.setY(Math.max(p2.getY(), s1y)); // y hacemos que el maximo entre la Y del s2 y la altura previa del s1 sea la altura Y de paux&#xD;
+&#xD;
+             if (paux.getY()!=prev) // si este maximo no es igual al del segmento anterior&#xD;
+             {&#xD;
+                 salida.addPunto(paux); // añadimos el punto al LineaHorizonte de salida&#xD;
+                 prev = paux.getY();    // actualizamos prev&#xD;
+             }&#xD;
+             s2y = p2.getY();   // actualizamos la altura s2y&#xD;
+             s2.borrarPunto(0); // en cualquier caso eliminamos el punto de s2 (tanto si se añade como si no es valido)&#xD;
+         }&#xD;
+         else // si la X del s1 es igual a la X del s2&#xD;
+         {&#xD;
+             if ((p1.getY() > p2.getY()) &amp;&amp; (p1.getY()!=prev)) // guardaremos aquel punto que tenga la altura mas alta&#xD;
+             {&#xD;
+                 salida.addPunto(p1);&#xD;
+                 prev = p1.getY();&#xD;
+             }&#xD;
+             if ((p1.getY() &lt;= p2.getY()) &amp;&amp; (p2.getY()!=prev))&#xD;
+             {&#xD;
+                 salida.addPunto(p2);&#xD;
+                 prev = p2.getY();&#xD;
+             }&#xD;
+             s1y = p1.getY();   // actualizamos la s1y e s2y&#xD;
+             s2y = p2.getY();&#xD;
+             s1.borrarPunto(0); // eliminamos el punto del s1 y del s2&#xD;
+             s2.borrarPunto(0);&#xD;
+         }&#xD;
+     }&#xD;
+     while ((!s1.isEmpty())) //si aun nos quedan elementos en el s1&#xD;
+     {&#xD;
+         paux=s1.getPunto(0); // guardamos en paux el primer punto&#xD;
+         &#xD;
+         if (paux.getY()!=prev) // si paux no tiene la misma altura del segmento previo&#xD;
+         {&#xD;
+             salida.addPunto(paux); // lo añadimos al LineaHorizonte de salida&#xD;
+             prev = paux.getY();    // y actualizamos prev&#xD;
+         }&#xD;
+         s1.borrarPunto(0); // en cualquier caso eliminamos el punto de s1 (tanto si se añade como si no es valido)&#xD;
+     }&#xD;
+     while((!s2.isEmpty())) //si aun nos quedan elementos en el s2&#xD;
+     {&#xD;
+         paux=s2.getPunto(0); // guardamos en paux el primer punto&#xD;
+        &#xD;
+         if (paux.getY()!=prev) // si paux no tiene la misma altura del segmento previo&#xD;
+         {&#xD;
+             salida.addPunto(paux); // lo añadimos al LineaHorizonte de salida&#xD;
+             prev = paux.getY();    // y actualizamos prev&#xD;
+         }&#xD;
+         s2.borrarPunto(0); // en cualquier caso eliminamos el punto de s2 (tanto si se añade como si no es valido)&#xD;
+     }&#xD;
+     return salida;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTmsx4DREeqr5fP3d8_puw" name="cargarEdificios" specification="_iROuMIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTmsyIDREeqr5fP3d8_puw" name="fichero">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>//    	int n = 6;&#xD;
+//    	int i=0;&#xD;
+//        int xi,y,xd;&#xD;
+//        for(i=0;i&lt;n;i++)&#xD;
+//        {&#xD;
+//            xi=(int)(Math.random()*100);&#xD;
+//            y=(int)(Math.random()*100);&#xD;
+//            xd=(int)(xi+(Math.random()*100));&#xD;
+//            this.addEdificio(new Edificio(xi,y,xd));&#xD;
+//        }&#xD;
+ 	&#xD;
+     try&#xD;
+     {&#xD;
+         int xi, y, xd;&#xD;
+         Scanner sr = new Scanner(new File(fichero));&#xD;
+&#xD;
+         while(sr.hasNext())&#xD;
+         {&#xD;
+             xi = sr.nextInt();&#xD;
+             xd = sr.nextInt();&#xD;
+             y = sr.nextInt();&#xD;
+&#xD;
+             Edificio Salida = new Edificio(xi, y, xd);&#xD;
+             this.addEdificio(Salida);&#xD;
+         }&#xD;
+     }&#xD;
+     catch(Exception e){} &#xD;
+        &#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTnT0IDREeqr5fP3d8_puw" name="metodoRandom" specification="_iRPVQIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTnT0YDREeqr5fP3d8_puw" name="n">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>int i=0;&#xD;
+     int xi,y,xd;&#xD;
+     for(i=0;i&lt;n;i++)&#xD;
+     {&#xD;
+         xi=(int)(Math.random()*100);&#xD;
+         y=(int)(Math.random()*100);&#xD;
+         xd=(int)(xi+(Math.random()*100));&#xD;
+         this.addEdificio(new Edificio(xi,y,xd));&#xD;
+     }&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_iRIAgIDREeqr5fP3d8_puw" name="Ciudad" method="_iTk3koDREeqr5fP3d8_puw">
+                <eAnnotations xmi:id="_iRIAgYDREeqr5fP3d8_puw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_iRIAgoDREeqr5fP3d8_puw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_iRIAg4DREeqr5fP3d8_puw" type="_iRGLUIDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRInkIDREeqr5fP3d8_puw" name="getEdificio" method="_iTleoIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRInkYDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iS_BsIDREeqr5fP3d8_puw" type="_iQ2TsYDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRJ1sIDREeqr5fP3d8_puw" name="removeEdificio" method="_iTlepYDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRJ1sYDREeqr5fP3d8_puw" name="i">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRLD0IDREeqr5fP3d8_puw" name="size" method="_iTmFsIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRLq4IDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRLq4YDREeqr5fP3d8_puw" name="getLineaHorizonte" method="_iTmFsoDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iS_owYDREeqr5fP3d8_puw" type="_iQ8aUIDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRM5AIDREeqr5fP3d8_puw" name="crearLineaHorizonte" method="_iTmFtIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRNgEIDREeqr5fP3d8_puw" name="pi">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iRNgEYDREeqr5fP3d8_puw" name="pd">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iS_owoDREeqr5fP3d8_puw" type="_iQ8aUIDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iROuMIDREeqr5fP3d8_puw" name="cargarEdificios" method="_iTmsx4DREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iROuMYDREeqr5fP3d8_puw" name="fichero">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRPVQIDREeqr5fP3d8_puw" name="metodoRandom" method="_iTnT0IDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRPVQYDREeqr5fP3d8_puw" name="n">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iS_BsYDREeqr5fP3d8_puw" name="addEdificio" method="_iTleo4DREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iS_owIDREeqr5fP3d8_puw" name="e" type="_iQ2TsYDREeqr5fP3d8_puw"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iTAP0IDREeqr5fP3d8_puw" name="LineaHorizonteFussion" method="_iTmswIDREeqr5fP3d8_puw">
+                <ownedComment xmi:id="_iTrlQoDREeqr5fP3d8_puw">
+                  <body>Función encargada de fusionar los dos LineaHorizonte obtenidos por la técnica divide y&#xD;
+     * vencerás. Es una función muy compleja ya que es la encargada de decidir si un&#xD;
+     * edificio solapa a otro, si hay edificios contiguos, etc. y solucionar dichos&#xD;
+     * problemas para que el LineaHorizonte calculado sea el correcto.</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_iTAP0YDREeqr5fP3d8_puw" name="s1" type="_iQ8aUIDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTAP0oDREeqr5fP3d8_puw" name="s2" type="_iQ8aUIDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTAP04DREeqr5fP3d8_puw" name="p1" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTAP1IDREeqr5fP3d8_puw" name="p2" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTA24IDREeqr5fP3d8_puw" name="paux" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTA24YDREeqr5fP3d8_puw" type="_iQ8aUIDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_iRU00IDREeqr5fP3d8_puw" name="Punto">
+              <ownedComment xmi:id="_iTrlQ4DREeqr5fP3d8_puw">
+                <body>@author Juan Manuel&#xD;
+Clase para definir un punto sobre el eje&#xD;
+cartesiano de coordendas</body>
+              </ownedComment>
+              <ownedAttribute xmi:id="_iTdi0IDREeqr5fP3d8_puw" name="x" visibility="package">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedAttribute xmi:id="_iTfYAIDREeqr5fP3d8_puw" name="y" visibility="package">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedAttribute>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTnT0oDREeqr5fP3d8_puw" name="Punto" specification="_iRWqAIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTnT04DREeqr5fP3d8_puw" type="_iRU00IDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>this.x = 0;&#xD;
+     this.y = 0;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTn64IDREeqr5fP3d8_puw" name="Punto" specification="_iRZtUIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTn64YDREeqr5fP3d8_puw" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTn64oDREeqr5fP3d8_puw" name="y">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTn644DREeqr5fP3d8_puw" type="_iRU00IDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>this.x = x;&#xD;
+     this.y = y;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTn65IDREeqr5fP3d8_puw" name="getX" specification="_iRa7coDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTn65YDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return x;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iToh8IDREeqr5fP3d8_puw" name="setX" specification="_iRbigIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iToh8YDREeqr5fP3d8_puw" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.x = x;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iToh8oDREeqr5fP3d8_puw" name="getY" specification="_iRcJkIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iToh84DREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>return y;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iToh9IDREeqr5fP3d8_puw" name="setY" specification="_iRcwoIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iToh9YDREeqr5fP3d8_puw" name="y">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>this.y = y;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTpJAIDREeqr5fP3d8_puw" name="distancia" specification="_iTCsEIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTpJAYDREeqr5fP3d8_puw" name="b" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTpJAoDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>double dis = 0;&#xD;
+ 	if(true)&#xD;
+ 		return 0;&#xD;
+ 	double cateto1 = x - b.getX();&#xD;
+ 	double cateto2 = y - b.getY();&#xD;
+ 	double hipotenusa = Math.sqrt(cateto1*cateto1 + cateto2*cateto2);&#xD;
+ 	return hipotenusa;&#xD;
+ </body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTpJA4DREeqr5fP3d8_puw" name="toString" specification="_iRdXsIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTpJBIDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>String linea = &quot;Punto [x=&quot;;&#xD;
+		linea = linea + x;&#xD;
+		linea = linea + &quot;, y=&quot;;&#xD;
+		linea = linea + y;&#xD;
+		linea = linea +  &quot;]&quot;;&#xD;
+		return linea;&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_iRWqAIDREeqr5fP3d8_puw" name="Punto" method="_iTnT0oDREeqr5fP3d8_puw">
+                <eAnnotations xmi:id="_iRYfMIDREeqr5fP3d8_puw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_iRYfMYDREeqr5fP3d8_puw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_iTsMUIDREeqr5fP3d8_puw">
+                  <body>Constructor sin par�metros de un punto en concreto</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_iRYfMoDREeqr5fP3d8_puw" type="_iRU00IDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRZtUIDREeqr5fP3d8_puw" name="Punto" method="_iTn64IDREeqr5fP3d8_puw">
+                <eAnnotations xmi:id="_iRaUYoDREeqr5fP3d8_puw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_iRa7cIDREeqr5fP3d8_puw" key="create"/>
+                </eAnnotations>
+                <ownedComment xmi:id="_iTsMUYDREeqr5fP3d8_puw">
+                  <body>Constructos con par�metros de un punto&#xD;
+     * @param x&#xD;
+     * @param y</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_iRaUYIDREeqr5fP3d8_puw" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iRaUYYDREeqr5fP3d8_puw" name="y">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iRa7cYDREeqr5fP3d8_puw" type="_iRU00IDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRa7coDREeqr5fP3d8_puw" name="getX" method="_iTn65IDREeqr5fP3d8_puw">
+                <ownedComment xmi:id="_iTsMUoDREeqr5fP3d8_puw">
+                  <body>Get de la coordenada X</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_iRa7c4DREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRbigIDREeqr5fP3d8_puw" name="setX" method="_iToh8IDREeqr5fP3d8_puw">
+                <ownedComment xmi:id="_iTsMU4DREeqr5fP3d8_puw">
+                  <body>Set de la coordenada X</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_iRbigYDREeqr5fP3d8_puw" name="x">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRcJkIDREeqr5fP3d8_puw" name="getY" method="_iToh8oDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRcJkYDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRcwoIDREeqr5fP3d8_puw" name="setY" method="_iToh9IDREeqr5fP3d8_puw">
+                <ownedComment xmi:id="_iTsMVIDREeqr5fP3d8_puw">
+                  <body>Set de la coordenada Y</body>
+                </ownedComment>
+                <ownedParameter xmi:id="_iRcwoYDREeqr5fP3d8_puw" name="y">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRdXsIDREeqr5fP3d8_puw" name="toString" method="_iTpJA4DREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRd-wIDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iTCsEIDREeqr5fP3d8_puw" name="distancia" method="_iTpJAIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTCsEYDREeqr5fP3d8_puw" name="b" type="_iRU00IDREeqr5fP3d8_puw"/>
+                <ownedParameter xmi:id="_iTCsEoDREeqr5fP3d8_puw" direction="return">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Class" xmi:id="_iRiQMIDREeqr5fP3d8_puw" name="CiudadTest">
+              <eAnnotations xmi:id="_iRiQMYDREeqr5fP3d8_puw" source="http://ns.yatta.de/umllab">
+                <contents xmi:type="ecore:EAnnotation" xmi:id="_iRiQMoDREeqr5fP3d8_puw" source="codegen">
+                  <details xmi:id="_iRiQM4DREeqr5fP3d8_puw" key="codegenDirectory" value="/lineadehorizonte/src/test/java"/>
+                </contents>
+              </eAnnotations>
+              <generalization xmi:id="_iTTx0IDREeqr5fP3d8_puw" general="_iTKA0YDREeqr5fP3d8_puw"/>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTpwEIDREeqr5fP3d8_puw" name="CiudadTest" specification="_iRjeUIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTpwEYDREeqr5fP3d8_puw" name="sTestName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iTpwEoDREeqr5fP3d8_puw" type="_iRiQMIDREeqr5fP3d8_puw" direction="return"/>
+                <language>java</language>
+                <body>super(sTestName);&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTpwE4DREeqr5fP3d8_puw" name="testGetLineaHorizonte1" specification="_iRmhoIDREeqr5fP3d8_puw">
+                <language>java</language>
+                <body>LineaHorizonte linea;&#xD;
+		Ciudad c;&#xD;
+		&#xD;
+		try {			&#xD;
+			&#xD;
+			c = new Ciudad();&#xD;
+			Edificio e1 = new Edificio(1,4,3);&#xD;
+			c.addEdificio(e1);&#xD;
+			Edificio e2 = new Edificio(2,7,9);&#xD;
+			c.addEdificio(e2);&#xD;
+			Edificio e3 = new Edificio(4,4,12);&#xD;
+			c.addEdificio(e3);	&#xD;
+			Edificio e4 = new Edificio(6,9,8);&#xD;
+			c.addEdificio(e4);&#xD;
+			Edificio e5 = new Edificio(11,6,13);&#xD;
+			c.addEdificio(e5);&#xD;
+			Edificio e6 = new Edificio(14,2,15);&#xD;
+			c.addEdificio(e6);		&#xD;
+&#xD;
+			&#xD;
+			linea = c.getLineaHorizonte();			&#xD;
+			assertTrue(linea.getPunto(0).getX()== 1  &amp;&amp; linea.getPunto(0).getY()==4);&#xD;
+			assertTrue(linea.getPunto(1).getX()== 2  &amp;&amp; linea.getPunto(1).getY()==7);&#xD;
+			assertTrue(linea.getPunto(2).getX()== 6  &amp;&amp; linea.getPunto(2).getY()==9);&#xD;
+			assertTrue(linea.getPunto(3).getX()== 8  &amp;&amp; linea.getPunto(3).getY()==7);   &#xD;
+			assertTrue(linea.getPunto(4).getX()== 9  &amp;&amp; linea.getPunto(4).getY()==4);&#xD;
+			assertTrue(linea.getPunto(5).getX()== 11 &amp;&amp; linea.getPunto(5).getY()==6);&#xD;
+			assertTrue(linea.getPunto(6).getX()== 13 &amp;&amp; linea.getPunto(6).getY()==0);&#xD;
+			assertTrue(linea.getPunto(7).getX()== 14  &amp;&amp; linea.getPunto(7).getY()==2);&#xD;
+			assertTrue(linea.getPunto(8).getX()== 15  &amp;&amp; linea.getPunto(8).getY()==0);&#xD;
+			&#xD;
+		} catch (Exception e) {			&#xD;
+			fail(&quot;Test failed&quot;);&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTpwFIDREeqr5fP3d8_puw" name="testGetLineaHorizonte2" specification="_iRnIsoDREeqr5fP3d8_puw">
+                <language>java</language>
+                <body>LineaHorizonte linea;&#xD;
+		Ciudad c;&#xD;
+		&#xD;
+		try {			&#xD;
+			&#xD;
+			c = new Ciudad();&#xD;
+			Edificio e1 = new Edificio(3,5,6);&#xD;
+			c.addEdificio(e1);&#xD;
+			Edificio e2 = new Edificio(4,3,9);&#xD;
+			c.addEdificio(e2);&#xD;
+			&#xD;
+			linea = c.getLineaHorizonte();			&#xD;
+			assertTrue(linea.getPunto(0).getX()== 3  &amp;&amp; linea.getPunto(0).getY()==5);&#xD;
+			assertTrue(linea.getPunto(1).getX()== 6  &amp;&amp; linea.getPunto(1).getY()==3);&#xD;
+			assertTrue(linea.getPunto(2).getX()== 9  &amp;&amp; linea.getPunto(2).getY()==0);			&#xD;
+			&#xD;
+		} catch (Exception e) {			&#xD;
+			fail(&quot;Test failed&quot;);&#xD;
+		}&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_iTpwFYDREeqr5fP3d8_puw" name="main" specification="_iRqzEIDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iTpwFoDREeqr5fP3d8_puw" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iTpwF4DREeqr5fP3d8_puw" value="*"/>
+                </ownedParameter>
+                <language>java</language>
+                <body>Result result = JUnitCore.runClasses(CiudadTest.class);&#xD;
+		for (Failure failure : result.getFailures()) {&#xD;
+			System.out.println(failure.toString());&#xD;
+		}&#xD;
+&#xD;
+	</body>
+              </ownedBehavior>
+              <ownedOperation xmi:id="_iRjeUIDREeqr5fP3d8_puw" name="CiudadTest" method="_iTpwEIDREeqr5fP3d8_puw">
+                <eAnnotations xmi:id="_iRkFYIDREeqr5fP3d8_puw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                  <details xmi:id="_iRkFYYDREeqr5fP3d8_puw" key="create"/>
+                </eAnnotations>
+                <ownedParameter xmi:id="_iRjeUYDREeqr5fP3d8_puw" name="sTestName">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedParameter>
+                <ownedParameter xmi:id="_iRkFYoDREeqr5fP3d8_puw" type="_iRiQMIDREeqr5fP3d8_puw" direction="return"/>
+              </ownedOperation>
+              <ownedOperation xmi:id="_iRkFY4DREeqr5fP3d8_puw" name="setUp" raisedException="_iTRVkYDREeqr5fP3d8_puw"/>
+              <ownedOperation xmi:id="_iRmhoIDREeqr5fP3d8_puw" name="testGetLineaHorizonte1" method="_iTpwE4DREeqr5fP3d8_puw"/>
+              <ownedOperation xmi:id="_iRnIsoDREeqr5fP3d8_puw" name="testGetLineaHorizonte2" method="_iTpwFIDREeqr5fP3d8_puw"/>
+              <ownedOperation xmi:id="_iRoW0YDREeqr5fP3d8_puw" name="tearDown" raisedException="_iTRVkYDREeqr5fP3d8_puw"/>
+              <ownedOperation xmi:id="_iRqzEIDREeqr5fP3d8_puw" name="main" isStatic="true" method="_iTpwFYDREeqr5fP3d8_puw">
+                <ownedParameter xmi:id="_iRqzEYDREeqr5fP3d8_puw" name="args">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_iRraIYDREeqr5fP3d8_puw" value="*"/>
+                </ownedParameter>
+              </ownedOperation>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_iTv2sIDREeqr5fP3d8_puw" name="" memberEnd="_iTv2sYDREeqr5fP3d8_puw _iTW1IIDREeqr5fP3d8_puw">
+              <ownedEnd xmi:id="_iTv2sYDREeqr5fP3d8_puw" name="" type="_iQ8aUIDREeqr5fP3d8_puw" association="_iTv2sIDREeqr5fP3d8_puw"/>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Association" xmi:id="_iTxE0IDREeqr5fP3d8_puw" name="" memberEnd="_iTxE0YDREeqr5fP3d8_puw _iTbGkIDREeqr5fP3d8_puw">
+              <ownedEnd xmi:id="_iTxE0YDREeqr5fP3d8_puw" name="" type="_iRGLUIDREeqr5fP3d8_puw" association="_iTxE0IDREeqr5fP3d8_puw"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_iP__IoDREeqr5fP3d8_puw" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_iQAmMIDREeqr5fP3d8_puw" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_iS3F4IDREeqr5fP3d8_puw" name="FileWriter"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_iS4UAIDREeqr5fP3d8_puw" name="PrintWriter"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_iS5iIIDREeqr5fP3d8_puw" name="File"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_iQGs0IDREeqr5fP3d8_puw" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_iS6JMIDREeqr5fP3d8_puw" name="ArrayList"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_iS-aoIDREeqr5fP3d8_puw" name="Scanner"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_iTRVkIDREeqr5fP3d8_puw" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_iTRVkYDREeqr5fP3d8_puw" name="Exception"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_iQfHUIDREeqr5fP3d8_puw" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_iQfHUYDREeqr5fP3d8_puw" name="junit">
+        <packagedElement xmi:type="uml:Package" xmi:id="_iQfuYIDREeqr5fP3d8_puw" name="runner">
+          <packagedElement xmi:type="uml:Package" xmi:id="_iQfuYYDREeqr5fP3d8_puw" name="notification">
+            <packagedElement xmi:type="uml:Class" xmi:id="_iTJZwYDREeqr5fP3d8_puw" name="Failure"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_iTILoIDREeqr5fP3d8_puw" name="JUnitCore"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_iTIysYDREeqr5fP3d8_puw" name="Result"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_iTD6MIDREeqr5fP3d8_puw" name="After"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_iTFIUYDREeqr5fP3d8_puw" name="Before"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_iTFvYYDREeqr5fP3d8_puw" name="Test"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_iQfuYoDREeqr5fP3d8_puw" name="junit">
+      <packagedElement xmi:type="uml:Package" xmi:id="_iQfuY4DREeqr5fP3d8_puw" name="framework">
+        <packagedElement xmi:type="uml:Class" xmi:id="_iTKA0YDREeqr5fP3d8_puw" name="TestCase"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_iF-gcIDREeqr5fP3d8_puw">
+      <eAnnotations xmi:id="_iF-gcYDREeqr5fP3d8_puw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_iF_HgIDREeqr5fP3d8_puw" base_Package="_h5Y18IDREeqr5fP3d8_puw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iRel0IDREeqr5fP3d8_puw" base_Element="_iRdXsIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Annotations xmi:id="_iRfM4IDREeqr5fP3d8_puw" base_Element="_iRdXsIDREeqr5fP3d8_puw">
+    <annotations xmi:id="_iRfz8IDREeqr5fP3d8_puw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iRlTgIDREeqr5fP3d8_puw" base_Element="_iRkFY4DREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Annotations xmi:id="_iRl6kIDREeqr5fP3d8_puw" base_Element="_iRkFY4DREeqr5fP3d8_puw">
+    <annotations xmi:id="_iRl6kYDREeqr5fP3d8_puw" name="Before"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iRmhoYDREeqr5fP3d8_puw" base_Element="_iRmhoIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Annotations xmi:id="_iRnIsIDREeqr5fP3d8_puw" base_Element="_iRmhoIDREeqr5fP3d8_puw">
+    <annotations xmi:id="_iRnIsYDREeqr5fP3d8_puw" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iRnvwIDREeqr5fP3d8_puw" base_Element="_iRnIsoDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Annotations xmi:id="_iRnvwYDREeqr5fP3d8_puw" base_Element="_iRnIsoDREeqr5fP3d8_puw">
+    <annotations xmi:id="_iRoW0IDREeqr5fP3d8_puw" name="Test"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iRoW0oDREeqr5fP3d8_puw" base_Element="_iRoW0YDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Annotations xmi:id="_iRo94IDREeqr5fP3d8_puw" base_Element="_iRoW0YDREeqr5fP3d8_puw">
+    <annotations xmi:id="_iRo94YDREeqr5fP3d8_puw" name="After"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iRraIIDREeqr5fP3d8_puw" base_Element="_iRqzEIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Array xmi:id="_iRsBMIDREeqr5fP3d8_puw" base_Element="_iRqzEYDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iS3s8IDREeqr5fP3d8_puw" base_Element="_iS3F4IDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iS47EIDREeqr5fP3d8_puw" base_Element="_iS4UAIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iS5iIYDREeqr5fP3d8_puw" base_Element="_iS5iIIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iS7XUIDREeqr5fP3d8_puw" base_Element="_iS6JMIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iS-aoYDREeqr5fP3d8_puw" base_Element="_iS-aoIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTFIUIDREeqr5fP3d8_puw" base_Element="_iTD6MIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTFvYIDREeqr5fP3d8_puw" base_Element="_iTFIUYDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTHkkIDREeqr5fP3d8_puw" base_Element="_iTFvYYDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTIysIDREeqr5fP3d8_puw" base_Element="_iTILoIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTJZwIDREeqr5fP3d8_puw" base_Element="_iTIysYDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTKA0IDREeqr5fP3d8_puw" base_Element="_iTJZwYDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTKn4IDREeqr5fP3d8_puw" base_Element="_iTKA0YDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTTKwIDREeqr5fP3d8_puw" base_Element="_iTRVkYDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Generics xmi:id="_iTYqUIDREeqr5fP3d8_puw" genericsValue="Punto" base_Element="_iTW1IIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iTZRYIDREeqr5fP3d8_puw" base_Element="_iTW1IIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Generics xmi:id="_iTcUsIDREeqr5fP3d8_puw" genericsValue="Edificio" base_Element="_iTbGkIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iTc7wIDREeqr5fP3d8_puw" base_Element="_iTbGkIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iTdi0YDREeqr5fP3d8_puw" base_Element="_iTdi0IDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_iTf_EIDREeqr5fP3d8_puw" base_Element="_iTfYAIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTwdwIDREeqr5fP3d8_puw" base_Element="_iTv2sIDREeqr5fP3d8_puw"/>
+  <UMLLabProfile:Reference xmi:id="_iTxr4IDREeqr5fP3d8_puw" base_Element="_iTxE0IDREeqr5fP3d8_puw"/>
+</xmi:XMI>
