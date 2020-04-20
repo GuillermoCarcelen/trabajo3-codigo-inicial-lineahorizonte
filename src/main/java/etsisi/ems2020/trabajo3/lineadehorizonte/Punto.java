@@ -67,11 +67,7 @@ public class Punto {
 
 	@Override
 	public String toString() {
-		String linea = "Punto [x=";
-		linea = linea + x;
-		linea = linea + ", y=";
-		linea = linea + y;
-		linea = linea +  "]";
+		String linea = "Punto [x="+ x + ", y="+ y +  "]";
 		return linea;
 	}
     

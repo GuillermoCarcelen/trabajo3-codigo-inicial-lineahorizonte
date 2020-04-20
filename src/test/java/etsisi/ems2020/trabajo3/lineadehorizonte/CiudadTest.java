@@ -6,11 +6,21 @@ import org.junit.Test;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;
+import org.apache.log4j.Logger;
 
 import junit.framework.TestCase;
 
+
+/**
+ * @author grupoTarde09
+ *
+ */
 public class CiudadTest extends TestCase{
 
+	private static final Logger LOG = Logger.getLogger(CiudadTest.class);
+	
+	
+	
 	public CiudadTest(String sTestName) {
 		super(sTestName);
 	}
@@ -20,6 +30,7 @@ public class CiudadTest extends TestCase{
 		
 	}
 
+	
 	@Test
 	public void testGetLineaHorizonte1() {
 		
@@ -59,6 +70,7 @@ public class CiudadTest extends TestCase{
 		}
 	}
 	
+	
 	@Test
 	public void testGetLineaHorizonte2() {
 		LineaHorizonte linea;
@@ -90,7 +102,7 @@ public class CiudadTest extends TestCase{
 	public static void main(String args[]) {
 		Result result = JUnitCore.runClasses(CiudadTest.class);
 		for (Failure failure : result.getFailures()) {
-			System.out.println(failure.toString());
+			LOG.info(failure.toString());
 		}
 
 	}

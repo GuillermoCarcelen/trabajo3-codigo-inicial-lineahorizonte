@@ -1,0 +1,774 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_h7knQIDREeqr5fP3d8_puw">
+  <modelElement href="lineadehorizonte.uml#_iQAmMYDREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_i-T2oIDREeqr5fP3d8_puw" targetItem="_i-eOuYDREeqr5fP3d8_puw" sourceItem="_i-HCUIDREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_i-Vr0YDREeqr5fP3d8_puw" targetItem="_i-eOv4DREeqr5fP3d8_puw" sourceItem="_i-Vr0IDREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_i-dnoIDREeqr5fP3d8_puw" sourceAnchor="0.0,103.0" targetAnchor="0.0,22.0" target="_kGZgEIDREeqr5fP3d8_puw" source="_i-eOsIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTv2sIDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_kGaHIIDREeqr5fP3d8_puw" position="296.0,455.0"/>
+    <bendpoints xmi:id="_nQWTkIDREeqr5fP3d8_puw" sourceX="-15" targetX="-308" targetY="514"/>
+    <bendpoints xmi:id="_nQW6oIDREeqr5fP3d8_puw" sourceX="-15" sourceY="-514" targetX="-308"/>
+    <stereotypes xmi:id="_i-dnoYDREeqr5fP3d8_puw" name="Reference">
+      <modelElement href="lineadehorizonte.uml#_iTwdwIDREeqr5fP3d8_puw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_i-dnooDREeqr5fP3d8_puw" text="">
+      <visualProperties xmi:id="_kLSnIIDREeqr5fP3d8_puw" position="-39.00000000000001,-36.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_i-dno4DREeqr5fP3d8_puw" aggregationKind="NONE" name="">
+      <modelElement href="lineadehorizonte.uml#_iTv2sYDREeqr5fP3d8_puw"/>
+      <visualProperties xmi:id="_kLQx8IDREeqr5fP3d8_puw" position="-20.00000000000001,2.0"/>
+      <visibility xmi:id="_i-dnpIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-dnpYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_i-dnpoDREeqr5fP3d8_puw" aggregationKind="NONE" name="LineaHorizonte" navigable="true">
+      <modelElement href="lineadehorizonte.uml#_iTW1IIDREeqr5fP3d8_puw"/>
+      <visualProperties xmi:id="_kLT1QIDREeqr5fP3d8_puw" position="-95.99999999999974,2.0000000000001705"/>
+      <visibility xmi:id="_i-dnp4DREeqr5fP3d8_puw" label="-"/>
+      <cardinality xmi:id="_i-dnqIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_i-33UIDREeqr5fP3d8_puw" sourceAnchor="315.0,0.0" targetAnchor="31.0,44.0" target="_kGZgEIDREeqr5fP3d8_puw" source="_i_e7UIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTxE0IDREeqr5fP3d8_puw"/>
+    <stereotypes xmi:id="_i_b4AYDREeqr5fP3d8_puw" name="Reference">
+      <modelElement href="lineadehorizonte.uml#_iTxr4IDREeqr5fP3d8_puw"/>
+    </stereotypes>
+    <nameVisual xmi:id="_i_bQ8IDREeqr5fP3d8_puw" text="">
+      <visualProperties xmi:id="_kLNHkIDREeqr5fP3d8_puw" position="2.0,-33.0"/>
+    </nameVisual>
+    <sourceRole xmi:id="_i_bQ8YDREeqr5fP3d8_puw" aggregationKind="NONE" name="">
+      <modelElement href="lineadehorizonte.uml#_iTxE0YDREeqr5fP3d8_puw"/>
+      <visualProperties xmi:id="_kLMggIDREeqr5fP3d8_puw" position="-17.0,-46.0"/>
+      <visibility xmi:id="_i_dtMYDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_dtMIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_i_b4AIDREeqr5fP3d8_puw" aggregationKind="NONE" name="ciudad" navigable="true">
+      <modelElement href="lineadehorizonte.uml#_iTbGkIDREeqr5fP3d8_puw"/>
+      <visualProperties xmi:id="_kLOVsIDREeqr5fP3d8_puw" position="2.0,22.0"/>
+      <visibility xmi:id="_i_eUQYDREeqr5fP3d8_puw" label="-"/>
+      <cardinality xmi:id="_i_eUQIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_i_ap4IDREeqr5fP3d8_puw" targetItem="_i_fic4DREeqr5fP3d8_puw" sourceItem="_i_VKUIDREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_jAox4IDREeqr5fP3d8_puw" targetItem="_jA5QkIDREeqr5fP3d8_puw" sourceItem="_jAK30IDREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_jAyi4YDREeqr5fP3d8_puw" targetItem="_jA5QnYDREeqr5fP3d8_puw" sourceItem="_jAyi4IDREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_jAzJ8YDREeqr5fP3d8_puw" targetItem="_jA5Qo4DREeqr5fP3d8_puw" sourceItem="_jAzJ8IDREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_jAzxAIDREeqr5fP3d8_puw" targetItem="_jA5Qr4DREeqr5fP3d8_puw" sourceItem="_jAzJ8oDREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_jAzxAoDREeqr5fP3d8_puw" targetItem="_jA5QtIDREeqr5fP3d8_puw" sourceItem="_jAzxAYDREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_jA0YEIDREeqr5fP3d8_puw" targetItem="_jA5Qv4DREeqr5fP3d8_puw" sourceItem="_jAzxA4DREeqr5fP3d8_puw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_nKAbAIDREeqr5fP3d8_puw" sourceAnchor="0.0,74.0" targetAnchor="30.0,44.0" superClass="_nKBCEIDREeqr5fP3d8_puw" subClass="_jBd4UIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTTx0IDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_nKBCFIDREeqr5fP3d8_puw" position="166.0,714.0"/>
+    <bendpoints xmi:id="_nQW6oYDREeqr5fP3d8_puw" sourceX="-98" targetY="142"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_i-HCUIDREeqr5fP3d8_puw" sourceConnectionVisual="_i-T2oIDREeqr5fP3d8_puw" text="Constructor sin par�metros" item="_i-eOuYDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTrlQIDREeqr5fP3d8_puw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_i-Vr0IDREeqr5fP3d8_puw" sourceConnectionVisual="_i-Vr0YDREeqr5fP3d8_puw" text="m�todo que devuelve un objeto de la clase Punto" item="_i-eOv4DREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTrlQYDREeqr5fP3d8_puw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_i_VKUIDREeqr5fP3d8_puw" sourceConnectionVisual="_i_ap4IDREeqr5fP3d8_puw" text="Función encargada de fusionar los dos LineaHorizonte obtenidos por la técnica divide y&#xD;&#xA;     * vencerás. Es una función muy compleja ya que es la encargada de decidir si un&#xD;&#xA;     * edificio solapa a otro, si hay edificios contiguos, etc. y solucionar dichos&#xD;&#xA;     * problemas para que el LineaHorizonte calculado sea el correcto." item="_i_fic4DREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTrlQoDREeqr5fP3d8_puw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jAK30IDREeqr5fP3d8_puw" sourceConnectionVisual="_jAox4IDREeqr5fP3d8_puw" text="@author Juan Manuel&#xD;&#xA;Clase para definir un punto sobre el eje&#xD;&#xA;cartesiano de coordendas" item="_jA5QkIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTrlQ4DREeqr5fP3d8_puw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jAyi4IDREeqr5fP3d8_puw" sourceConnectionVisual="_jAyi4YDREeqr5fP3d8_puw" text="Constructor sin par�metros de un punto en concreto" item="_jA5QnYDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTsMUIDREeqr5fP3d8_puw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jAzJ8IDREeqr5fP3d8_puw" sourceConnectionVisual="_jAzJ8YDREeqr5fP3d8_puw" text="Constructos con par�metros de un punto&#xD;&#xA;     * @param x&#xD;&#xA;     * @param y" item="_jA5Qo4DREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTsMUYDREeqr5fP3d8_puw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jAzJ8oDREeqr5fP3d8_puw" sourceConnectionVisual="_jAzxAIDREeqr5fP3d8_puw" text="Get de la coordenada X" item="_jA5Qr4DREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTsMUoDREeqr5fP3d8_puw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jAzxAYDREeqr5fP3d8_puw" sourceConnectionVisual="_jAzxAoDREeqr5fP3d8_puw" text="Set de la coordenada X" item="_jA5QtIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTsMU4DREeqr5fP3d8_puw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_jAzxA4DREeqr5fP3d8_puw" sourceConnectionVisual="_jA0YEIDREeqr5fP3d8_puw" text="Set de la coordenada Y" item="_jA5Qv4DREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTsMVIDREeqr5fP3d8_puw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_i9bs4IDREeqr5fP3d8_puw" name="Main">
+    <modelElement href="lineadehorizonte.uml#_iQzQYIDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_i9bs4YDREeqr5fP3d8_puw" position="19.0,857.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_i9bs4oDREeqr5fP3d8_puw" label="+"/>
+    <operations xmi:id="_i9bs44DREeqr5fP3d8_puw" name="main" staticOperation="true">
+      <modelElement href="lineadehorizonte.uml#_iQ1soYDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i9bs5IDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i9bs5YDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_i9bs5oDREeqr5fP3d8_puw" name="args">
+        <modelElement href="lineadehorizonte.uml#_iQ1sooDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i9bs54DREeqr5fP3d8_puw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_i9bs6IDREeqr5fP3d8_puw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_i_e7UIDREeqr5fP3d8_puw" name="Ciudad" associationsOut="_i-33UIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iRGLUIDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_i_e7UYDREeqr5fP3d8_puw" position="20.0,31.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_i_e7UoDREeqr5fP3d8_puw" label="+"/>
+    <attributes xmi:id="_i_e7U4DREeqr5fP3d8_puw" name="ciudad">
+      <modelElement href="lineadehorizonte.uml#_iTbGkIDREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_i_e7VIDREeqr5fP3d8_puw" name="Generics">
+        <modelElement href="lineadehorizonte.uml#_iTcUsIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_i_e7VYDREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iTc7wIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_i_e7VoDREeqr5fP3d8_puw" label="-"/>
+      <cardinality xmi:id="_i_e7V4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <type xmi:id="_i_e7WIDREeqr5fP3d8_puw" name="ArrayList">
+        <modelElement href="lineadehorizonte.uml#_iS6JMIDREeqr5fP3d8_puw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_i_e7WYDREeqr5fP3d8_puw" name="Ciudad">
+      <modelElement href="lineadehorizonte.uml#_iRIAgIDREeqr5fP3d8_puw"/>
+      <keywords xmi:id="_i_e7WoDREeqr5fP3d8_puw" keyword="create"/>
+      <visibility xmi:id="_i_e7W4DREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_e7XIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i_e7XYDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRIAg4DREeqr5fP3d8_puw"/>
+        <type xmi:id="_i_e7XoDREeqr5fP3d8_puw" name="Ciudad">
+          <modelElement href="lineadehorizonte.uml#_iRGLUIDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_i_e7X4DREeqr5fP3d8_puw" name="getEdificio">
+      <modelElement href="lineadehorizonte.uml#_iRInkIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i_e7YIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_e7YYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i_e7YoDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iS_BsIDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i_e7Y4DREeqr5fP3d8_puw" name="Edificio">
+          <modelElement href="lineadehorizonte.uml#_iQ2TsYDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_i_e7ZIDREeqr5fP3d8_puw" name="i">
+        <modelElement href="lineadehorizonte.uml#_iRInkYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_e7ZYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_e7ZoDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i_e7Z4DREeqr5fP3d8_puw" name="removeEdificio">
+      <modelElement href="lineadehorizonte.uml#_iRJ1sIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i_e7aIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_e7aYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_i_e7aoDREeqr5fP3d8_puw" name="i">
+        <modelElement href="lineadehorizonte.uml#_iRJ1sYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_e7a4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_e7bIDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i_e7bYDREeqr5fP3d8_puw" name="size">
+      <modelElement href="lineadehorizonte.uml#_iRLD0IDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i_e7boDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_e7b4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i_e7cIDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRLq4IDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i_e7cYDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_i_e7coDREeqr5fP3d8_puw" name="getLineaHorizonte">
+      <modelElement href="lineadehorizonte.uml#_iRLq4YDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i_e7c4DREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_e7dIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i_e7dYDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iS_owYDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i_e7doDREeqr5fP3d8_puw" name="LineaHorizonte">
+          <modelElement href="lineadehorizonte.uml#_iQ8aUIDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_i_e7d4DREeqr5fP3d8_puw" name="crearLineaHorizonte">
+      <modelElement href="lineadehorizonte.uml#_iRM5AIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i_e7eIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_e7eYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i_e7eoDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iS_owoDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i_e7e4DREeqr5fP3d8_puw" name="LineaHorizonte">
+          <modelElement href="lineadehorizonte.uml#_iQ8aUIDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_i_e7fIDREeqr5fP3d8_puw" name="pi">
+        <modelElement href="lineadehorizonte.uml#_iRNgEIDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_e7fYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_e7foDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i_e7f4DREeqr5fP3d8_puw" name="pd">
+        <modelElement href="lineadehorizonte.uml#_iRNgEYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_e7gIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_fiYIDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i_fiYYDREeqr5fP3d8_puw" name="cargarEdificios">
+      <modelElement href="lineadehorizonte.uml#_iROuMIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i_fiYoDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_fiY4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_i_fiZIDREeqr5fP3d8_puw" name="fichero">
+        <modelElement href="lineadehorizonte.uml#_iROuMYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_fiZYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_fiZoDREeqr5fP3d8_puw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i_fiZ4DREeqr5fP3d8_puw" name="metodoRandom">
+      <modelElement href="lineadehorizonte.uml#_iRPVQIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i_fiaIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_fiaYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_i_fiaoDREeqr5fP3d8_puw" name="n">
+        <modelElement href="lineadehorizonte.uml#_iRPVQYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_fia4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_fibIDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i_fibYDREeqr5fP3d8_puw" name="addEdificio">
+      <modelElement href="lineadehorizonte.uml#_iS_BsYDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i_fiboDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_fib4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_i_ficIDREeqr5fP3d8_puw" name="e">
+        <modelElement href="lineadehorizonte.uml#_iS_owIDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_ficYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_ficoDREeqr5fP3d8_puw" name="Edificio">
+          <modelElement href="lineadehorizonte.uml#_iQ2TsYDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i_fic4DREeqr5fP3d8_puw" comments="_i_VKUIDREeqr5fP3d8_puw" targetConnectionVisual="_i_ap4IDREeqr5fP3d8_puw" name="LineaHorizonteFussion">
+      <modelElement href="lineadehorizonte.uml#_iTAP0IDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i_fidIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i_fidYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i_fidoDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iTA24YDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i_fid4DREeqr5fP3d8_puw" name="LineaHorizonte">
+          <modelElement href="lineadehorizonte.uml#_iQ8aUIDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_i_fieIDREeqr5fP3d8_puw" name="s1">
+        <modelElement href="lineadehorizonte.uml#_iTAP0YDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_fieYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_fieoDREeqr5fP3d8_puw" name="LineaHorizonte">
+          <modelElement href="lineadehorizonte.uml#_iQ8aUIDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i_fie4DREeqr5fP3d8_puw" name="s2">
+        <modelElement href="lineadehorizonte.uml#_iTAP0oDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_fifIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_fifYDREeqr5fP3d8_puw" name="LineaHorizonte">
+          <modelElement href="lineadehorizonte.uml#_iQ8aUIDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i_fifoDREeqr5fP3d8_puw" name="p1">
+        <modelElement href="lineadehorizonte.uml#_iTAP04DREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_fif4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_figIDREeqr5fP3d8_puw" name="Punto">
+          <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i_figYDREeqr5fP3d8_puw" name="p2">
+        <modelElement href="lineadehorizonte.uml#_iTAP1IDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_figoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_fig4DREeqr5fP3d8_puw" name="Punto">
+          <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i_fihIDREeqr5fP3d8_puw" name="paux">
+        <modelElement href="lineadehorizonte.uml#_iTA24IDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i_fihYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i_fihoDREeqr5fP3d8_puw" name="Punto">
+          <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_kGZgEIDREeqr5fP3d8_puw" name="ArrayList" associationsIn="_i-dnoIDREeqr5fP3d8_puw _i-33UIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iS6JMIDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_kGZgEYDREeqr5fP3d8_puw" position="304.0,-81.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_kGZgEoDREeqr5fP3d8_puw" name="Reference">
+      <modelElement href="lineadehorizonte.uml#_iS7XUIDREeqr5fP3d8_puw"/>
+    </stereotypes>
+    <visibility xmi:id="_kGZgE4DREeqr5fP3d8_puw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_i-eOsIDREeqr5fP3d8_puw" name="LineaHorizonte" associationsOut="_i-dnoIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iQ8aUIDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_i-eOsYDREeqr5fP3d8_puw" position="11.0,352.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_i-eOsoDREeqr5fP3d8_puw" label="+"/>
+    <attributes xmi:id="_i-eOs4DREeqr5fP3d8_puw" name="LineaHorizonte">
+      <modelElement href="lineadehorizonte.uml#_iTW1IIDREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_i-eOtIDREeqr5fP3d8_puw" name="Generics">
+        <modelElement href="lineadehorizonte.uml#_iTYqUIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_i-eOtYDREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iTZRYIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_i-eOtoDREeqr5fP3d8_puw" label="-"/>
+      <cardinality xmi:id="_i-eOt4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <type xmi:id="_i-eOuIDREeqr5fP3d8_puw" name="ArrayList">
+        <modelElement href="lineadehorizonte.uml#_iS6JMIDREeqr5fP3d8_puw"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_i-eOuYDREeqr5fP3d8_puw" comments="_i-HCUIDREeqr5fP3d8_puw" targetConnectionVisual="_i-T2oIDREeqr5fP3d8_puw" name="LineaHorizonte">
+      <modelElement href="lineadehorizonte.uml#_iQ9BYIDREeqr5fP3d8_puw"/>
+      <keywords xmi:id="_i-eOuoDREeqr5fP3d8_puw" keyword="create"/>
+      <visibility xmi:id="_i-eOu4DREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-eOvIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i-eOvYDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iQ9ocYDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i-eOvoDREeqr5fP3d8_puw" name="LineaHorizonte">
+          <modelElement href="lineadehorizonte.uml#_iQ8aUIDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_i-eOv4DREeqr5fP3d8_puw" comments="_i-Vr0IDREeqr5fP3d8_puw" targetConnectionVisual="_i-Vr0YDREeqr5fP3d8_puw" name="getPunto">
+      <modelElement href="lineadehorizonte.uml#_iQ-PgIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i-eOwIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-eOwYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i-eOwoDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iS7XUYDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i-eOw4DREeqr5fP3d8_puw" name="Punto">
+          <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_i-eOxIDREeqr5fP3d8_puw" name="i">
+        <modelElement href="lineadehorizonte.uml#_iQ-PgYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i-eOxYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i-eOxoDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i-eOx4DREeqr5fP3d8_puw" name="borrarPunto">
+      <modelElement href="lineadehorizonte.uml#_iQ_doIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i-eOyIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-eOyYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_i-eOyoDREeqr5fP3d8_puw" name="i">
+        <modelElement href="lineadehorizonte.uml#_iRAEsIDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i-eOy4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i-eOzIDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i-gD4IDREeqr5fP3d8_puw" name="size">
+      <modelElement href="lineadehorizonte.uml#_iRBS0IDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i-gD4YDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-gD4oDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i-gD44DREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRBS0YDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i-gD5IDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_i-gD5YDREeqr5fP3d8_puw" name="isEmpty">
+      <modelElement href="lineadehorizonte.uml#_iRBS0oDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i-gD5oDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-gD54DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i-gD6IDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRB54IDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i-gD6YDREeqr5fP3d8_puw" name="boolean">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_i-gD6oDREeqr5fP3d8_puw" name="imprimir">
+      <modelElement href="lineadehorizonte.uml#_iRDIAIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i-gD64DREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-gD7IDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_i-gD7YDREeqr5fP3d8_puw" name="cadena">
+      <modelElement href="lineadehorizonte.uml#_iRDvEIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i-gD7oDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-gD74DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i-gD8IDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRDvEoDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i-gD8YDREeqr5fP3d8_puw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_i-gD8oDREeqr5fP3d8_puw" name="i">
+        <modelElement href="lineadehorizonte.uml#_iRDvEYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i-gD84DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i-gD9IDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i-gD9YDREeqr5fP3d8_puw" name="addPunto">
+      <modelElement href="lineadehorizonte.uml#_iS7-YIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i-gD9oDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-gD94DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_i-gD-IDREeqr5fP3d8_puw" name="p">
+        <modelElement href="lineadehorizonte.uml#_iS7-YYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i-gD-YDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i-gD-oDREeqr5fP3d8_puw" name="Punto">
+          <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_i-gD-4DREeqr5fP3d8_puw" name="guardaLineaHorizonte">
+      <modelElement href="lineadehorizonte.uml#_iTO5UIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i-gD_IDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i-gD_YDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_i-gD_oDREeqr5fP3d8_puw" name="fichero">
+        <modelElement href="lineadehorizonte.uml#_iTO5UYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i-gD_4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i-gEAIDREeqr5fP3d8_puw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i-gEAYDREeqr5fP3d8_puw" name="p">
+        <modelElement href="lineadehorizonte.uml#_iTO5UoDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i-gEAoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i-gEA4DREeqr5fP3d8_puw" name="Punto">
+          <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i-gEBIDREeqr5fP3d8_puw" name="fileWriter">
+        <modelElement href="lineadehorizonte.uml#_iTO5U4DREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i-gEBYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i-gEBoDREeqr5fP3d8_puw" name="FileWriter">
+          <modelElement href="lineadehorizonte.uml#_iS3F4IDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i-gEB4DREeqr5fP3d8_puw" name="out">
+        <modelElement href="lineadehorizonte.uml#_iTO5VIDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i-gECIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i-gECYDREeqr5fP3d8_puw" name="PrintWriter">
+          <modelElement href="lineadehorizonte.uml#_iS4UAIDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i-gECoDREeqr5fP3d8_puw" name="i">
+        <modelElement href="lineadehorizonte.uml#_iTO5VYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i-gEC4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i-gEDIDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_jA5QkIDREeqr5fP3d8_puw" comments="_jAK30IDREeqr5fP3d8_puw" targetConnectionVisual="_jAox4IDREeqr5fP3d8_puw" name="Punto">
+    <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_jA5QkYDREeqr5fP3d8_puw" position="650.0,352.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_jA5QkoDREeqr5fP3d8_puw" label="+"/>
+    <attributes xmi:id="_jA5Qk4DREeqr5fP3d8_puw" name="x">
+      <modelElement href="lineadehorizonte.uml#_iTdi0IDREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_jA5QlIDREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iTdi0YDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_jA5QlYDREeqr5fP3d8_puw" label="~"/>
+      <cardinality xmi:id="_jA5QloDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <type xmi:id="_jA5Ql4DREeqr5fP3d8_puw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_jA5QmIDREeqr5fP3d8_puw" name="y">
+      <modelElement href="lineadehorizonte.uml#_iTfYAIDREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_jA5QmYDREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iTf_EIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_jA5QmoDREeqr5fP3d8_puw" label="~"/>
+      <cardinality xmi:id="_jA5Qm4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <type xmi:id="_jA5QnIDREeqr5fP3d8_puw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_jA5QnYDREeqr5fP3d8_puw" comments="_jAyi4IDREeqr5fP3d8_puw" targetConnectionVisual="_jAyi4YDREeqr5fP3d8_puw" name="Punto">
+      <modelElement href="lineadehorizonte.uml#_iRWqAIDREeqr5fP3d8_puw"/>
+      <keywords xmi:id="_jA5QnoDREeqr5fP3d8_puw" keyword="create"/>
+      <visibility xmi:id="_jA5Qn4DREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jA5QoIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_jA5QoYDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRYfMoDREeqr5fP3d8_puw"/>
+        <type xmi:id="_jA5QooDREeqr5fP3d8_puw" name="Punto">
+          <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_jA5Qo4DREeqr5fP3d8_puw" comments="_jAzJ8IDREeqr5fP3d8_puw" targetConnectionVisual="_jAzJ8YDREeqr5fP3d8_puw" name="Punto">
+      <modelElement href="lineadehorizonte.uml#_iRZtUIDREeqr5fP3d8_puw"/>
+      <keywords xmi:id="_jA5QpIDREeqr5fP3d8_puw" keyword="create"/>
+      <visibility xmi:id="_jA5QpYDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jA5QpoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_jA5Qp4DREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRa7cYDREeqr5fP3d8_puw"/>
+        <type xmi:id="_jA5QqIDREeqr5fP3d8_puw" name="Punto">
+          <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_jA5QqYDREeqr5fP3d8_puw" name="x">
+        <modelElement href="lineadehorizonte.uml#_iRaUYIDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_jA5QqoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_jA5Qq4DREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_jA5QrIDREeqr5fP3d8_puw" name="y">
+        <modelElement href="lineadehorizonte.uml#_iRaUYYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_jA5QrYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_jA5QroDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_jA5Qr4DREeqr5fP3d8_puw" comments="_jAzJ8oDREeqr5fP3d8_puw" targetConnectionVisual="_jAzxAIDREeqr5fP3d8_puw" name="getX">
+      <modelElement href="lineadehorizonte.uml#_iRa7coDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_jA5QsIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jA5QsYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_jA5QsoDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRa7c4DREeqr5fP3d8_puw"/>
+        <type xmi:id="_jA5Qs4DREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_jA5QtIDREeqr5fP3d8_puw" comments="_jAzxAYDREeqr5fP3d8_puw" targetConnectionVisual="_jAzxAoDREeqr5fP3d8_puw" name="setX">
+      <modelElement href="lineadehorizonte.uml#_iRbigIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_jA5QtYDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jA5QtoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_jA5Qt4DREeqr5fP3d8_puw" name="x">
+        <modelElement href="lineadehorizonte.uml#_iRbigYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_jA5QuIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_jA5QuYDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_jA5QuoDREeqr5fP3d8_puw" name="getY">
+      <modelElement href="lineadehorizonte.uml#_iRcJkIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_jA5Qu4DREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jA5QvIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_jA5QvYDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRcJkYDREeqr5fP3d8_puw"/>
+        <type xmi:id="_jA5QvoDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_jA5Qv4DREeqr5fP3d8_puw" comments="_jAzxA4DREeqr5fP3d8_puw" targetConnectionVisual="_jA0YEIDREeqr5fP3d8_puw" name="setY">
+      <modelElement href="lineadehorizonte.uml#_iRcwoIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_jA5QwIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jA5QwYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_jA5QwoDREeqr5fP3d8_puw" name="y">
+        <modelElement href="lineadehorizonte.uml#_iRcwoYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_jA5Qw4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_jA5QxIDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_jA5QxYDREeqr5fP3d8_puw" name="toString">
+      <modelElement href="lineadehorizonte.uml#_iRdXsIDREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_jA5QxoDREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iRel0IDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_jA5Qx4DREeqr5fP3d8_puw" name="Annotations">
+        <modelElement href="lineadehorizonte.uml#_iRfM4IDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_jA5QyIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jA5QyYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_jA5QyoDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRd-wIDREeqr5fP3d8_puw"/>
+        <type xmi:id="_jA5Qy4DREeqr5fP3d8_puw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_jA5QzIDREeqr5fP3d8_puw" name="distancia">
+      <modelElement href="lineadehorizonte.uml#_iTCsEIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_jA5QzYDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jA5QzoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_jA5Qz4DREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iTCsEoDREeqr5fP3d8_puw"/>
+        <type xmi:id="_jA5Q0IDREeqr5fP3d8_puw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_jA5Q0YDREeqr5fP3d8_puw" name="b">
+        <modelElement href="lineadehorizonte.uml#_iTCsEYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_jA5Q0oDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_jA5Q04DREeqr5fP3d8_puw" name="Punto">
+          <modelElement href="lineadehorizonte.uml#_iRU00IDREeqr5fP3d8_puw"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_nKBCEIDREeqr5fP3d8_puw" name="TestCase" subclassedBy="_nKAbAIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iTKA0YDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_nKBCEYDREeqr5fP3d8_puw" position="-111.0,528.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_nKBCEoDREeqr5fP3d8_puw" name="Reference">
+      <modelElement href="lineadehorizonte.uml#_iTKn4IDREeqr5fP3d8_puw"/>
+    </stereotypes>
+    <visibility xmi:id="_nKBCE4DREeqr5fP3d8_puw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_jBd4UIDREeqr5fP3d8_puw" name="CiudadTest" generalizations="_nKAbAIDREeqr5fP3d8_puw">
+    <modelElement href="lineadehorizonte.uml#_iRiQMIDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_jBd4UYDREeqr5fP3d8_puw" position="17.0,640.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_jBd4UoDREeqr5fP3d8_puw" label="+"/>
+    <operations xmi:id="_jBd4U4DREeqr5fP3d8_puw" name="CiudadTest">
+      <modelElement href="lineadehorizonte.uml#_iRjeUIDREeqr5fP3d8_puw"/>
+      <keywords xmi:id="_jBd4VIDREeqr5fP3d8_puw" keyword="create"/>
+      <visibility xmi:id="_jBd4VYDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jBd4VoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_jBd4V4DREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iRkFYoDREeqr5fP3d8_puw"/>
+        <type xmi:id="_jBd4WIDREeqr5fP3d8_puw" name="CiudadTest">
+          <modelElement href="lineadehorizonte.uml#_iRiQMIDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_jBd4WYDREeqr5fP3d8_puw" name="sTestName">
+        <modelElement href="lineadehorizonte.uml#_iRjeUYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_jBd4WoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_jBd4W4DREeqr5fP3d8_puw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_jBd4XIDREeqr5fP3d8_puw" name="setUp">
+      <modelElement href="lineadehorizonte.uml#_iRkFY4DREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_jBd4XYDREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iRlTgIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_jBd4XoDREeqr5fP3d8_puw" name="Annotations">
+        <modelElement href="lineadehorizonte.uml#_iRl6kIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_jBd4X4DREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jBd4YIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_jBd4YYDREeqr5fP3d8_puw" name="testGetLineaHorizonte1">
+      <modelElement href="lineadehorizonte.uml#_iRmhoIDREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_jBd4YoDREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iRmhoYDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_jBd4Y4DREeqr5fP3d8_puw" name="Annotations">
+        <modelElement href="lineadehorizonte.uml#_iRnIsIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_jBd4ZIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jBd4ZYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_jBd4ZoDREeqr5fP3d8_puw" name="testGetLineaHorizonte2">
+      <modelElement href="lineadehorizonte.uml#_iRnIsoDREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_jBd4Z4DREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iRnvwIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_jBd4aIDREeqr5fP3d8_puw" name="Annotations">
+        <modelElement href="lineadehorizonte.uml#_iRnvwYDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_jBd4aYDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jBd4aoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_jBd4a4DREeqr5fP3d8_puw" name="tearDown">
+      <modelElement href="lineadehorizonte.uml#_iRoW0YDREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_jBd4bIDREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iRoW0oDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_jBd4bYDREeqr5fP3d8_puw" name="Annotations">
+        <modelElement href="lineadehorizonte.uml#_iRo94IDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_jBd4boDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jBd4b4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+    </operations>
+    <operations xmi:id="_jBd4cIDREeqr5fP3d8_puw" name="main" staticOperation="true">
+      <modelElement href="lineadehorizonte.uml#_iRqzEIDREeqr5fP3d8_puw"/>
+      <stereotypes xmi:id="_jBd4cYDREeqr5fP3d8_puw" name="LegacyStyledElement">
+        <modelElement href="lineadehorizonte.uml#_iRraIIDREeqr5fP3d8_puw"/>
+      </stereotypes>
+      <visibility xmi:id="_jBd4coDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_jBd4c4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_jBd4dIDREeqr5fP3d8_puw" name="args">
+        <modelElement href="lineadehorizonte.uml#_iRqzEYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_jBd4dYDREeqr5fP3d8_puw" label="1..*" max="-1" min="1"/>
+        <type xmi:id="_jBd4doDREeqr5fP3d8_puw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_i9wdAIDREeqr5fP3d8_puw" name="Edificio">
+    <modelElement href="lineadehorizonte.uml#_iQ2TsYDREeqr5fP3d8_puw"/>
+    <visualProperties xmi:id="_i9wdAYDREeqr5fP3d8_puw" position="378.0,646.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_i9wdAoDREeqr5fP3d8_puw" label="+"/>
+    <attributes xmi:id="_i9wdA4DREeqr5fP3d8_puw" name="xi">
+      <modelElement href="lineadehorizonte.uml#_iTVnAIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i9wdBIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i9wdBYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <type xmi:id="_i9wdBoDREeqr5fP3d8_puw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_i9wdB4DREeqr5fP3d8_puw" name="y">
+      <modelElement href="lineadehorizonte.uml#_iTVnAYDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i9wdCIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i9wdCYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <type xmi:id="_i9wdCoDREeqr5fP3d8_puw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_i9wdC4DREeqr5fP3d8_puw" name="xd">
+      <modelElement href="lineadehorizonte.uml#_iTWOEIDREeqr5fP3d8_puw"/>
+      <visibility xmi:id="_i9wdDIDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i9wdDYDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <type xmi:id="_i9wdDoDREeqr5fP3d8_puw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_i9wdD4DREeqr5fP3d8_puw" name="Edificio">
+      <modelElement href="lineadehorizonte.uml#_iQ5XAIDREeqr5fP3d8_puw"/>
+      <keywords xmi:id="_i9wdEIDREeqr5fP3d8_puw" keyword="create"/>
+      <visibility xmi:id="_i9wdEYDREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i9wdEoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i9wdE4DREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iQ5XA4DREeqr5fP3d8_puw"/>
+        <type xmi:id="_i9wdFIDREeqr5fP3d8_puw" name="Edificio">
+          <modelElement href="lineadehorizonte.uml#_iQ2TsYDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_i9wdFYDREeqr5fP3d8_puw" name="Edificio">
+      <modelElement href="lineadehorizonte.uml#_iQ5-EIDREeqr5fP3d8_puw"/>
+      <keywords xmi:id="_i9wdFoDREeqr5fP3d8_puw" keyword="create"/>
+      <visibility xmi:id="_i9wdF4DREeqr5fP3d8_puw" label="+"/>
+      <cardinality xmi:id="_i9wdGIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_i9wdGYDREeqr5fP3d8_puw">
+        <modelElement href="lineadehorizonte.uml#_iQ6lJIDREeqr5fP3d8_puw"/>
+        <type xmi:id="_i9wdGoDREeqr5fP3d8_puw" name="Edificio">
+          <modelElement href="lineadehorizonte.uml#_iQ2TsYDREeqr5fP3d8_puw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_i9wdG4DREeqr5fP3d8_puw" name="xi">
+        <modelElement href="lineadehorizonte.uml#_iQ5-EYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i9wdHIDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i9wdHYDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i9wdHoDREeqr5fP3d8_puw" name="y">
+        <modelElement href="lineadehorizonte.uml#_iQ6lIIDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i9wdH4DREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i9wdIIDREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_i9wdIYDREeqr5fP3d8_puw" name="xd">
+        <modelElement href="lineadehorizonte.uml#_iQ6lIYDREeqr5fP3d8_puw"/>
+        <cardinality xmi:id="_i9wdIoDREeqr5fP3d8_puw" label="1" max="1" min="1"/>
+        <type xmi:id="_i9wdI4DREeqr5fP3d8_puw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

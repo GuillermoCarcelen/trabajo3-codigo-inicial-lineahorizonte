@@ -4,47 +4,50 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import org.apache.log4j.Logger;
 
 
 public class LineaHorizonte {
 	
-	private ArrayList <Punto> LineaHorizonte ;
+	private static final Logger LOG = Logger.getLogger(LineaHorizonte.class);
+	
+	private ArrayList <Punto> lineaHorizonte ;
 	
     /*
      * Constructor sin par�metros
      */
     public LineaHorizonte()
     {
-        LineaHorizonte = new ArrayList <Punto>();
+        lineaHorizonte = new ArrayList <Punto>();
     }
             
     /*
      * m�todo que devuelve un objeto de la clase Punto
      */
     public Punto getPunto(int i) {
-        return (Punto)this.LineaHorizonte.get(i);
+        return (Punto)this.lineaHorizonte.get(i);
     }
     
     // A�ado un punto a la l�nea del horizonte
     public void addPunto(Punto p)
     {
-        LineaHorizonte.add(p);
+        lineaHorizonte.add(p);
     }    
     
     // m�todo que borra un punto de la l�nea del horizonte
     public void borrarPunto(int i)
     {
-        LineaHorizonte.remove(i);
+        lineaHorizonte.remove(i);
     }
     
     public int size()
     {
-        return LineaHorizonte.size();
+        return lineaHorizonte.size();
     }
     // m�todo que me dice si la l�nea del horizonte est� o no vac�a
     public boolean isEmpty()
     {
-        return LineaHorizonte.isEmpty();
+        return lineaHorizonte.isEmpty();
     }
    
     /*
@@ -53,15 +56,15 @@ public class LineaHorizonte {
       mediante la t�cnica de divide y vencer�s.
      */
     
-    public void guardaLineaHorizonte (String fichero, Punto p, FileWriter fileWriter, PrintWriter out, int i)
+    public void guardaLineaHorizonte (String fichero)//, Punto p, FileWriter fileWriter, PrintWriter out, int i)
     {
         try
         {
-            p = new Punto();
-            fileWriter = new FileWriter(fichero);
-            out = new PrintWriter (fileWriter);
+            Punto p = new Punto();
+            FileWriter fileWriter = new FileWriter(fichero);
+            PrintWriter out = new PrintWriter (fileWriter);
          
-            for(i=0; i<this.size(); i++)
+            for(int i=0; i<this.size(); i++)
             {
                 p=(getPunto(i));
                 out.print(p.getX());
@@ -76,21 +79,22 @@ public class LineaHorizonte {
     
     public void imprimir (){
     	
-    	for(int i=0; i< LineaHorizonte.size(); i++ ){
-    		//System.out.println("X: " + LineaHorizonte.get(i).getX() + " Y: " + LineaHorizonte.get(i).getY());
-    		System.out.println(cadena(i));
+    	for(int i=0; i< lineaHorizonte.size(); i++ ){
+    		//System.out.println("X: " + lineaHorizonte.get(i).getX() + " Y: " + lineaHorizonte.get(i).getY());
+    		LOG.info(cadena(i));
     	}
     }
     
     public String cadena (int i){
-    	Punto p = LineaHorizonte.get(i);
+    	Punto p = lineaHorizonte.get(i);
     	int x = p.getX();
     	int y = p.getY();
-    	String linea = "Punto [x=";
+    	/*String linea = "Punto [x=";
 		linea = linea + x;
 		linea = linea + ", y=";
 		linea = linea + y;
-		linea = linea +  "]";
+		linea = linea +  "]";*/
+    	String linea = "Punto [x="+ x + ", y="+ y +  "]";
 		return linea;
     }
 }
