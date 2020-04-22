@@ -1,6 +1,6 @@
 package etsisi.ems2020.trabajo3.lineadehorizonte;
 
-import java.io.File;
+import java.io.File; 
 import java.util.ArrayList;
 import java.util.Scanner;
 import org.apache.log4j.Logger;
@@ -20,19 +20,6 @@ public class Ciudad {
 	private ArrayList<Edificio> ciudad;
 
 	public Ciudad() {
-
-		/*
-		 * Generamos una ciudad de manera aleatoria para hacer pruebas.
-		 */
-		/*ciudad = new ArrayList<Edificio>();
-		int i = 0,n=5;
-		int xi, y, xd;
-		for (int i = 0; i < 5; i++) {
-			xi = (int) (Math.random() * 100);
-			y = (int) (Math.random() * 100);
-			xd = (int) (xi + (Math.random() * 100));
-			this.addEdificio(new Edificio(xi, y, xd));
-		}*/
 		ciudad = new ArrayList<Edificio>();
 	}
 
@@ -84,8 +71,7 @@ public class Ciudad {
 
 			final LineaHorizonte s1 = this.crearLineaHorizonte(pi, medio);
 			final LineaHorizonte s2 = this.crearLineaHorizonte(medio + 1, pd);
-			//Punto a = null, b = null, aux = null;
-			linea = lineaHorizonteFussion(s1, s2);//, a, b, aux);
+			linea = lineaHorizonteFussion(s1, s2);
 		}
 		return linea;
 	}
@@ -98,49 +84,13 @@ public class Ciudad {
 	 * correcto.
 	 */
 	public LineaHorizonte lineaHorizonteFussion(LineaHorizonte s1, LineaHorizonte s2) {
-		int prev = -1,s1y = -1, s2y = -1;
-		LineaHorizonte salida = new LineaHorizonte(); 
-		Punto p1 = new Punto(); 
-		Punto p2 = new Punto(); 
-		Punto paux ;
+		
 
 		imprimirCiudad(s1,s2);
-
-		while ((!s1.isEmpty()) && (!s2.isEmpty())) {
-			paux = new Punto();
-			p1 = s1.getPunto(0); 
-			p2 = s2.getPunto(0); 
-
-			if (p1.getX() < p2.getX()) 
-			{
-				guardarActualizarPunto(p1,paux,s2y);
-				if (paux.getY() != prev) {
-					prev = guardarActualizarLineaHorizonte(salida,paux);
-				}
-				s1y =  actualizarPunto(s1,p1);
-			} else if (p1.getX() > p2.getX()) 
-			{
-				guardarActualizarPunto(p2,paux,s1y);
-				if (paux.getY() != prev) {
-					prev = guardarActualizarLineaHorizonte(salida,paux);
-				}
-				s2y =actualizarPunto(s2,p2);
-			} else {
-				if ((p1.getY() > p2.getY()) && (p1.getY() != prev)) {
-					prev = guardarActualizarLineaHorizonte(salida,p1);
-				}
-				if ((p1.getY() <= p2.getY()) && (p2.getY() != prev)) {
-					prev = guardarActualizarLineaHorizonte(salida,p2);
-				}
-				s1y = actualizarPunto(s1,p1);
-				s2y = actualizarPunto(s2,p2);
-			}
-		}
-		prev = comprobarVacio(s1,salida, prev);
-		prev = comprobarVacio(s2,salida, prev);
-		return salida;
+		FusionaLineasHorizontes lineaHorizontefusion = new FusionaLineasHorizontes();
+		return lineaHorizontefusion.fusion(s1, s2);
+		
 	}
-	
 	/*Funcion que imprime por consola los datos*/
 	private void imprimirCiudad(LineaHorizonte s1,LineaHorizonte s2) {
 		
@@ -148,58 +98,15 @@ public class Ciudad {
 		s1.imprimir();
 		LOG.info("==== S2 ====");
 		s2.imprimir();
-		//System.out.println("\n");
-	
-	}
-
-	/*Funcion que guarda parte del resultado (paux) en la salida final y actualiza*/
-	private int guardarActualizarLineaHorizonte(LineaHorizonte salida,Punto paux) {
-		
-		salida.addPunto(paux); 
-		return paux.getY(); 
-	
-	}
-
-	/*Funcion que guarda y actualiza con el valor maximo de la Y de las dos lineas*/
-	private void guardarActualizarPunto(Punto p,Punto paux,int sy) {
-		
-		paux.setX(p.getX()); 
-		paux.setY(Math.max(p.getY(), sy)); 
-	
-	}
-
-	/*Funcion que actualiza la altura de s2y y elimina el punto de s2*/
-	private int actualizarPunto(LineaHorizonte s,Punto p) {
-		
-		s.borrarPunto(0); 
-		return p.getY(); 
-		
+		LOG.info("\n");
+		/*
+		System.out.println("==== S1 ====");
+		System.out.println("==== S2 ====");
+		System.out.println("\n");*/
 	
 	}
 	
 	
-	
-	private int comprobarVacio(LineaHorizonte s,LineaHorizonte salida, int prev) {
-		
-		Punto paux;
-		int auxPREV = prev;
-		while ((!s.isEmpty())) // si aun nos quedan elementos en el s2
-		{
-			paux = s.getPunto(0); // guardamos en paux el primer punto
-
-			if (paux.getY() != prev) // si paux no tiene la misma altura del segmento previo
-			{
-				salida.addPunto(paux); // lo añadimos al LineaHorizonte de salida
-				auxPREV = paux.getY(); // y actualizamos prev
-			}
-			s.borrarPunto(0); // en cualquier caso eliminamos el punto de s2 (tanto si se añade como si no es
-								// valido)
-		
-		}
-		
-		return auxPREV;
-
-	}
 	
 	
 	/*

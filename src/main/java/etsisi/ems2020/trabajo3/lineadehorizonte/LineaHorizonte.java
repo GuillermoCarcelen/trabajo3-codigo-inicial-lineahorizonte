@@ -40,6 +40,7 @@ public class LineaHorizonte {
         lineaHorizonte.remove(i);
     }
     
+    //Metodo que dvuelve el tamano de lineaHorizonte
     public int size()
     {
         return lineaHorizonte.size();
@@ -56,7 +57,7 @@ public class LineaHorizonte {
       mediante la t�cnica de divide y vencer�s.
      */
     
-    public void guardaLineaHorizonte (String fichero)//, Punto p, FileWriter fileWriter, PrintWriter out, int i)
+    public void guardaLineaHorizonte (String fichero)
     {
         try
         {
@@ -77,23 +78,20 @@ public class LineaHorizonte {
         catch(Exception e){}
     }
     
+    //Metodo que  imprime por pantalla toda la informacion
     public void imprimir (){
     	
     	for(int i=0; i< lineaHorizonte.size(); i++ ){
-    		//System.out.println("X: " + lineaHorizonte.get(i).getX() + " Y: " + lineaHorizonte.get(i).getY());
     		LOG.info(cadena(i));
+    		//System.out.println(cadena(i));
     	}
     }
     
+    //Metodo que devuelve el string de los datos de lineaHorizonte
     public String cadena (int i){
     	Punto p = lineaHorizonte.get(i);
     	int x = p.getX();
     	int y = p.getY();
-    	/*String linea = "Punto [x=";
-		linea = linea + x;
-		linea = linea + ", y=";
-		linea = linea + y;
-		linea = linea +  "]";*/
     	String linea = "Punto [x="+ x + ", y="+ y +  "]";
 		return linea;
     }
