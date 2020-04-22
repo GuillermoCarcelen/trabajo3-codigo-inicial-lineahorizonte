@@ -24,10 +24,10 @@ public class Main {
         
         linea.guardaLineaHorizonte("salida.txt");
         LOG.info("-- Proceso finalizado Correctamente --");
-        //System.out.println("-- Proceso finalizado Correctamente --");
+        System.out.println("-- Proceso finalizado Correctamente --");
         Punto  p2 = new Punto(5,6);
         LOG.info(p2);
-        //System.out.println(p2);
+        System.out.println(p2);
 	}
 
 }

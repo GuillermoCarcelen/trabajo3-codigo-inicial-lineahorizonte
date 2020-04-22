@@ -95,14 +95,13 @@ public class Ciudad {
 	private void imprimirCiudad(LineaHorizonte s1,LineaHorizonte s2) {
 		
 		LOG.info("==== S1 ====");
+		System.out.println("==== S1 ====");
 		s1.imprimir();
 		LOG.info("==== S2 ====");
+		System.out.println("==== S2 ====");
 		s2.imprimir();
 		LOG.info("\n");
-		/*
-		System.out.println("==== S1 ====");
-		System.out.println("==== S2 ====");
-		System.out.println("\n");*/
+		System.out.println("\n");
 	
 	}
 	
