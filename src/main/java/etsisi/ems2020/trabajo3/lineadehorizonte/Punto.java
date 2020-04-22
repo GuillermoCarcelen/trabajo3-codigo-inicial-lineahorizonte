@@ -34,7 +34,6 @@ public class Punto {
     public int getX() {
         return x;
     }
-    
     /*
      * 
      * Set de la coordenada X
