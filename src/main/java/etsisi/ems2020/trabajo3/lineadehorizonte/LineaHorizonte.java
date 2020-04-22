@@ -83,7 +83,7 @@ public class LineaHorizonte {
     	
     	for(int i=0; i< lineaHorizonte.size(); i++ ){
     		LOG.info(cadena(i));
-    		//System.out.println(cadena(i));
+    		System.out.println(cadena(i));
     	}
     }
     

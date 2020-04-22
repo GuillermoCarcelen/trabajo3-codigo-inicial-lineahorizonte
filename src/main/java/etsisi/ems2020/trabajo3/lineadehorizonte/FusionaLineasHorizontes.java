@@ -1,11 +1,9 @@
 package etsisi.ems2020.trabajo3.lineadehorizonte;
 
 
-import org.apache.log4j.Logger;
 
 public class FusionaLineasHorizontes {
 	
-	private static final Logger LOG = Logger.getLogger(FusionaLineasHorizontes.class);
 
     private int prev ,s1y , s2y ;
     LineaHorizonte salida;
@@ -67,7 +65,6 @@ public class FusionaLineasHorizontes {
         //Mientras tengamos elementos en s1 y en s2
         while ((!s1.isEmpty()) && (!s2.isEmpty())) 
         {
-            //paux = new Punto();  // Inicializamos la variable paux
             p1 = s1.getPunto(0); // guardamos el primer elemento de s1
             p2 = s2.getPunto(0); // guardamos el primer elemento de s2
 
@@ -115,7 +112,6 @@ public class FusionaLineasHorizontes {
 		{
 			guardarActualizarLineaHorizonte(paux); 
 		}
-		//sy = p.getY(); 
 		return actualizarPunto(s,p);
 	
 	}
