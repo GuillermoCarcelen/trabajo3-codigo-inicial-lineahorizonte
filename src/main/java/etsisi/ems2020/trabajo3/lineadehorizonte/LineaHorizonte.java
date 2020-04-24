@@ -61,17 +61,14 @@ public class LineaHorizonte {
     {
         try
         {
-            Punto p = new Punto();
+            Punto p;
             FileWriter fileWriter = new FileWriter(fichero);
             PrintWriter out = new PrintWriter (fileWriter);
          
             for(int i=0; i<this.size(); i++)
             {
                 p=(getPunto(i));
-                out.print(p.getX());
-                out.print(" ");
-                out.print(p.getY());
-                out.println();
+                p.imprimirPunto(out);
             }
             out.close();
         }

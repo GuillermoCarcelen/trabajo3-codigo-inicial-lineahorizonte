@@ -1,5 +1,8 @@
 package etsisi.ems2020.trabajo3.lineadehorizonte;
 
+import java.io.FileWriter;
+import java.io.PrintWriter;
+
 /*
  * 
  * @author Juan Manuel
@@ -62,6 +65,13 @@ public class Punto {
 	public void actualizarPunto( int x, int y){
         this.x = x;
         this.y = y;
+    }
+
+    public void imprimirPunto(PrintWriter out){
+        out.print(this.x);
+        out.print(" ");
+        out.print(this.y);
+        out.println();
     }
     
     
