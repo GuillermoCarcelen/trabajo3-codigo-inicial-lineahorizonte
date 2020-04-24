@@ -48,29 +48,23 @@ public class Ciudad {
 
 	public LineaHorizonte crearLineaHorizonte(int pi, int pd) {
 		LineaHorizonte linea = new LineaHorizonte(); // LineaHorizonte de salida
-		final Punto p1 = new Punto(); // punto donde se guardara en su X la Xi del efificio y en su Y la altura del
-								// edificio
-		final Punto p2 = new Punto(); // punto donde se guardara en su X la Xd del efificio y en su Y le pondremos el
-								// valor 0
-		Edificio edificio = new Edificio();
+		final Punto p1 = new Punto();
+		final Punto p2 = new Punto();
+		Edificio edificio;
 
-// Caso base, la ciudad solo tiene un edificio, el perfil es el de ese edificio. 
 		if (pi == pd) {
-			edificio = this.getEdificio(pi); // Obtenemos el único edificio y lo guardo en b
-// En cada punto guardamos la coordenada X y la altura.
-			p1.setX(edificio.getXi());
-			p1.setY(edificio.getY()); // guardo la altura
-			p2.setX(edificio.getXd());
-			p2.setY(0); // como el edificio se compone de 3 variables, en la Y de p2 le añadiremos un 0
-// Añado los puntos a la línea del horizonte
+			edificio = this.getEdificio(pi);
+			p1.actualizarPunto(edificio.getXi(),edificio.getY());
+			p2.actualizarPunto(edificio.getXd(),0);
+
 			linea.addPunto(p1);
 			linea.addPunto(p2);
 		} else {
-// Edificio mitad
 			final int medio = (pi + pd) / 2;
 
 			final LineaHorizonte s1 = this.crearLineaHorizonte(pi, medio);
 			final LineaHorizonte s2 = this.crearLineaHorizonte(medio + 1, pd);
+
 			linea = lineaHorizonteFussion(s1, s2);
 		}
 		return linea;
@@ -133,9 +127,8 @@ public class Ciudad {
 	}
 
 	public void metodoRandom(int n) {
-		int i = 0;
 		int xi, y, xd;
-		for (i = 0; i < n; i++) {
+		for (int i = 0; i < n; i++) {
 			xi = (int) (Math.random() * 100);
 			y = (int) (Math.random() * 100);
 			xd = (int) (xi + (Math.random() * 100));
