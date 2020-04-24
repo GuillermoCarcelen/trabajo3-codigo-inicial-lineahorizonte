@@ -73,6 +73,16 @@ public class Punto {
         out.print(this.y);
         out.println();
     }
+    public int comprobarVacioAux(int prev, LineaHorizonte salida){
+        int aux = prev;
+        if (this.y != prev)
+        {
+            salida.addPunto(this);
+            aux = this.y;
+
+        }
+        return aux;
+    }
     
     
 }

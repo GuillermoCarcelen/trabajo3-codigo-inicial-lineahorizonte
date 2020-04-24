@@ -77,19 +77,14 @@ public class LineaHorizonte {
     
     //Metodo que  imprime por pantalla toda la informacion
     public void imprimir (){
-    	
     	for(int i=0; i< lineaHorizonte.size(); i++ ){
-    		LOG.info(cadena(i));
     		System.out.println(cadena(i));
     	}
     }
     
     //Metodo que devuelve el string de los datos de lineaHorizonte
-    public String cadena (int i){
-    	Punto p = lineaHorizonte.get(i);
-    	int x = p.getX();
-    	int y = p.getY();
-    	String linea = "Punto [x="+ x + ", y="+ y +  "]";
-		return linea;
+    public String cadena (int i) {
+        Punto p = lineaHorizonte.get(i);
+        return p.toString();
     }
 }

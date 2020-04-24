@@ -146,17 +146,12 @@ public class FusionaLineasHorizontes {
 	private void comprobarVacio(LineaHorizonte s) {
 		
 		Punto paux;
-		while ((!s.isEmpty())) // si aun nos quedan elementos en el s2
+		while ((!s.isEmpty()))
 		{
-			paux = s.getPunto(0); // guardamos en paux el primer punto
+			paux = s.getPunto(0);
+			this.prev = paux.comprobarVacioAux(this.prev, this.salida);
+			s.borrarPunto(0);
 
-			if (paux.getY() != this.prev) // si paux no tiene la misma altura del segmento previo
-			{
-				this.salida.addPunto(paux); // lo añadimos al LineaHorizonte de salida
-				this.prev = paux.getY(); // y actualizamos prev
-			}
-			s.borrarPunto(0); // en cualquier caso eliminamos el punto de s2 (tanto si se añade como si no es
-								// valido)
 		}
 	
 	}

@@ -5,9 +5,6 @@ import java.io.PrintWriter;
 import org.apache.log4j.Logger;
 
 public class Main {
-	
-	private static final Logger LOG = Logger.getLogger(Main.class);
-
 	public static void Main(String[] args) {
 		
 		/*
@@ -20,11 +17,7 @@ public class Main {
         LineaHorizonte linea = c.getLineaHorizonte();
         
         linea.guardaLineaHorizonte("salida.txt");
-        LOG.info("-- Proceso finalizado Correctamente --");
         System.out.println("-- Proceso finalizado Correctamente --");
-        Punto  p2 = new Punto(5,6);
-        LOG.info(p2);
-        System.out.println(p2);
 	}
 
 }
