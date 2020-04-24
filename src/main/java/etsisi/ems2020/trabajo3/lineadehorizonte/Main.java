@@ -16,11 +16,8 @@ public class Main {
 		 */
         Ciudad c = new Ciudad();
         c.cargarEdificios("ciudad1.txt");
-        
-        // Creamos l�nea del horizonte
-        LineaHorizonte linea = new LineaHorizonte();
-        linea = c.getLineaHorizonte();
-        //Guardamos la linea del horizonte
+
+        LineaHorizonte linea = c.getLineaHorizonte();
         
         linea.guardaLineaHorizonte("salida.txt");
         LOG.info("-- Proceso finalizado Correctamente --");

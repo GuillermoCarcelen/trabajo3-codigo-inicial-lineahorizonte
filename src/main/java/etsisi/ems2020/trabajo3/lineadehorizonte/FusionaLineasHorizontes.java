@@ -106,10 +106,8 @@ public class FusionaLineasHorizontes {
 	//************************************************************************************************************************************************** */
 	private int anadirFusion(Punto p,int sy,LineaHorizonte s) {
 		
-		Punto paux = new Punto();
 		int puntoY = Math.max(p.getY(), sy);
-		paux.setX(p.getX());
-		paux.setY(puntoY);
+		Punto paux = new Punto(p.getX(), puntoY);
 
 		if (puntoY!= this.prev)
 		{
