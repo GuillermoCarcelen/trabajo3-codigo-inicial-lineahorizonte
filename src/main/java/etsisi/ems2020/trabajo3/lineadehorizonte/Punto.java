@@ -53,22 +53,16 @@ public class Punto {
     public void setY(int y) {
         this.y = y;
     }
-    
-    public double distancia (Punto b){
-    	double dis = 0;
-    	if(true)
-    		return 0;
-    	double cateto1 = x - b.getX();
-    	double cateto2 = y - b.getY();
-    	double hipotenusa = Math.sqrt(cateto1*cateto1 + cateto2*cateto2);
-    	return hipotenusa;
-    }
 
 	@Override
 	public String toString() {
-		String linea = "Punto [x="+ x + ", y="+ y +  "]";
-		return linea;
+		return "Punto [x="+ x + ", y="+ y +  "]";
 	}
+
+	public void actualizarPunto( int x, int y){
+        this.x = x;
+        this.y = y;
+    }
     
     
 }
