@@ -76,17 +76,17 @@ public class FusionaLineasHorizontes {
             if ( menorValorX(x1, x2) )
 			{
 				s1y=anadirFusion(x1, y1, this.s2y);
-				s1.borrarPunto(0);
+				this.borrarPunto(s1);
 			} else if (  !( menorValorX(x1, x2) )  )
 			{
 				s2y=anadirFusion(x2, y2, this.s1y);
-				s2.borrarPunto(0);
+				this.borrarPunto(s2);
 
 			}else
             {
             	actualizarLineaHorizonte(p1, p2);
-				s2.borrarPunto(0);
-				s1.borrarPunto(0);
+				this.borrarPunto(s1);
+				this.borrarPunto(s2);
             	this.s1y=y1;
             	this.s2y=y2;
 
@@ -126,6 +126,9 @@ public class FusionaLineasHorizontes {
 		return y;
 	}
 
+	public void borrarPunto(LineaHorizonte s){
+		s.borrarPunto(0);
+	}
 	/*Funcion que guarda parte del resultado (paux) en la salida final y actualiza*/
 	private void guardarActualizarLineaHorizonte(Punto paux, int pauxY) {
 		
