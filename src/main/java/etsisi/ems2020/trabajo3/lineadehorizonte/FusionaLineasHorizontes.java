@@ -69,17 +69,27 @@ public class FusionaLineasHorizontes {
 
 			int x1=p1.getX();
 			int x2=p2.getX();
+
+			int y1=p1.getY();
+			int y2=p2.getY();
+
             if ( menorValorX(x1, x2) )
 			{
-				s1y=anadirFusion(p1,this.s2y, s1);
+				s1y=anadirFusion(x1, y1, this.s2y);
+				s1.borrarPunto(0);
 			} else if (  !( menorValorX(x1, x2) )  )
 			{
-				s2y=anadirFusion(p2,this.s1y, s2);
+				s2y=anadirFusion(x2, y2, this.s1y);
+				s2.borrarPunto(0);
+
 			}else
             {
             	actualizarLineaHorizonte(p1, p2);
-				this.s1y=actualizarPunto(s1,p1);
-				this.s2y=actualizarPunto(s2,p2);
+				s2.borrarPunto(0);
+				s1.borrarPunto(0);
+            	this.s1y=y1;
+            	this.s2y=y2;
+
             }
         }
         comprobarVacio(s1);
@@ -104,17 +114,16 @@ public class FusionaLineasHorizontes {
 
 
 	//************************************************************************************************************************************************** */
-	private int anadirFusion(Punto p,int sy,LineaHorizonte s) {
-		
-		int puntoY = Math.max(p.getY(), sy);
-		Punto paux = new Punto(p.getX(), puntoY);
+	private int anadirFusion(int x, int y, int sy) {
+
+		int puntoY = Math.max(y, sy);
+		Punto paux = new Punto(x, puntoY);
 
 		if (puntoY!= this.prev)
 		{
 			guardarActualizarLineaHorizonte(paux, puntoY);
 		}
-		return actualizarPunto(s,p);
-	
+		return y;
 	}
 
 	/*Funcion que guarda parte del resultado (paux) en la salida final y actualiza*/
@@ -125,15 +134,6 @@ public class FusionaLineasHorizontes {
 	
 	}
 
-
-	/*Funcion que actualiza la altura de s2y y elimina el punto de s2*/
-	private int actualizarPunto(LineaHorizonte s,Punto p) {
-		
-		s.borrarPunto(0);
-		return p.getY(); 
-		
-	
-	}
 	
 	private boolean menorValorX(int valor1, int valor2){
 
