@@ -64,14 +64,14 @@ public class FusionaLineasHorizontes {
         while ((!s1.isEmpty()) && (!s2.isEmpty())) 
         {
 
-            p1 = s1.getPunto(0);
-            p2 = s2.getPunto(0);
+            p1 = this.getPunto(s1);
+            p2 = this.getPunto(s2);
 
-			int x1=p1.getX();
-			int x2=p2.getX();
+			int x1=this.getX(p1);
+			int x2=this.getX(p2);
 
-			int y1=p1.getY();
-			int y2=p2.getY();
+			int y1=this.getY(p1);
+			int y2=this.getY(p2);
 
             if ( menorValorX(x1, x2) )
 			{
@@ -98,8 +98,8 @@ public class FusionaLineasHorizontes {
 	}
 
 	private void actualizarLineaHorizonte(Punto p1, Punto p2){
-		int y1=p1.getY();
-		int y2=p2.getY();
+		int y1=this.getY(p1);
+		int y2=this.getY(p2);
 
 		if ((y1 > y2) && (y1 != this.prev)) {
 			guardarActualizarLineaHorizonte(p1, y1);
@@ -129,6 +129,18 @@ public class FusionaLineasHorizontes {
 	public void borrarPunto(LineaHorizonte s){
 		s.borrarPunto(0);
 	}
+
+	public Punto getPunto(LineaHorizonte s) {
+		return s.getPunto(0);
+	}
+
+	public int getX(Punto p){
+		return p.getX();
+	}
+
+	public int getY(Punto p){
+		return p.getY();
+	}
 	/*Funcion que guarda parte del resultado (paux) en la salida final y actualiza*/
 	private void guardarActualizarLineaHorizonte(Punto paux, int pauxY) {
 		
@@ -151,9 +163,9 @@ public class FusionaLineasHorizontes {
 		Punto paux;
 		while ((!s.isEmpty()))
 		{
-			paux = s.getPunto(0);
+			paux = this.getPunto(s);
 			this.prev = paux.comprobarVacioAux(this.prev, this.salida);
-			s.borrarPunto(0);
+			this.borrarPunto(s);
 
 		}
 	
